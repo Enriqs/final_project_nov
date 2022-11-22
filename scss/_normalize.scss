@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $defaultFontAll;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+main,
+main > section,
+main > section > article{
+   @include flexColumnCenter;
+}
