@@ -1,0 +1,16 @@
+@media (min-width:$mediaSizeDesktop) {
+    .merch {
+
+        background-color: red!important;
+        nav{
+
+            > ul {
+                display: flex;
+            } 
+
+            > details {
+                display: none;
+            }
+        }
+    }
+}
