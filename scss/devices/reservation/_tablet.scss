@@ -54,12 +54,30 @@
     font-size: 50px
   }
 
+  h2 {
+    font-size: 40px;
+  }
+
   // ticket
   .ticket {
     width: 95%;
 
     p {
       font-size: 23px
+    }
+  }
+
+  // policy
+  .policy {
+    width: 100%;
+
+    p,
+    li {
+      font-size: 20px
+    }
+
+    label {
+      font-size: 20px;
     }
   }
 }
