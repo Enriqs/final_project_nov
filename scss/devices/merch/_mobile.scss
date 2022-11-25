@@ -1,0 +1,398 @@
+@media (min-width:$mediaSizeMobile) {
+
+    .merch {
+
+        // img {
+        //     height: 30vh;
+        // }
+
+        article {
+            width: 100%
+        }
+
+        main {
+            overflow: hidden;
+        }
+
+        main,
+        main > section {
+        @include flexColumnCenter;
+        }
+
+        h2 > span {
+            display: none;
+        }
+
+        //********************************************
+        nav {
+            background-color: white;
+            height: 10vh;
+            position: relative;
+            @include flexColumnCenter;
+
+            > ul {
+                display: none;
+            }
+        }
+
+        details.bars {
+            width: 85%;
+            text-align: end;
+            position: fixed;
+            z-index: 1200;
+
+            > ul {
+                width: 100%;
+                @include flexColumnCenter;
+                position: absolute;
+                background-color: $defaultBackgroundC;
+                text-align: start;
+                padding: 0;
+                list-style-type: none ;
+            }
+
+            li {
+                display: flex;
+                width: 100%;
+                border: 1px solid white;
+                background-color: black;
+                transition: .5s;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+                width: 100%;
+                padding: 2%;
+            }
+
+            > summary {
+                font-size: 25px;
+                font-weight: 800;
+            }
+        }
+    
+        header{
+            // @include backImage("/img/grass.jpg");
+            background-color: black;
+            z-index: -1;
+            height: 12vh;
+            padding-top: 1vh;
+    
+            > section {
+                @include flexColumnCenter;
+                height: 100%;
+            }
+
+            h1 {
+                font-size: 14px;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.322);
+            }
+
+            i {
+                @include flexColumnCenter;
+                color: white;
+                text-align: center;
+                border: 2px solid white;
+                border-radius: 50%;
+                width: 6vh;
+                height: 6vh;
+                background-color: rgba(0, 0, 0, 0.322);
+            }
+
+            article:nth-child(3) {
+                display: none;
+            }
+ 
+        }
+
+        details.login {
+            width: 30%;
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+            // padding-left: 2vh;
+            // border: 1px solid red;
+
+            summary {
+                @include flexColumnCenter;
+                padding: 1%;
+                background-color: black;
+                color: white;
+                width: 9vh;
+                height: 9vh;
+                border-radius: 50%;
+                font-size: 26px;
+                border: 2px solid white;
+                transition: .5s;
+            }
+
+            .formFather {
+                padding-top: 1vh;
+                width: 35vh;
+                position: absolute;
+                z-index: 1099;
+            }
+
+            form {
+                width: 100%;
+                @include flexColumnCenter;
+                row-gap: 0.5vh;
+            }
+
+            input {
+                width: 100%;
+                border: 1px solid black;
+                padding: 1vh;
+                background-color: white;
+                color: black;
+            }
+        }
+
+        .loginFather {
+            // padding-top: 2vh;
+            height: 15vh;
+            // border: 1px solid red;
+            flex-direction: row;
+            background: linear-gradient(#000000, white);
+
+            > h2 {
+                font-size: 16px;
+                font-weight: 700;
+                color: white;
+            }
+        }
+        
+        .carousels {
+            // padding: 5vh 0 5vh 0;
+            padding-top: 5vh;
+
+            > article {
+                // border: 5px solid rgb(255, 0, 0);
+
+                width: 100%;
+            }
+            img {
+                width: 100%;
+                height: 40vh;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+
+        aside > button.btn + p {
+            display: none;
+        }
+
+        .ad {
+            height: 75vh;
+
+            > article {
+                // height: 50%;
+                position: relative;
+            }
+        }
+
+
+        video {
+            width: 100%;
+            position: absolute;
+            left: 50%; /* % of surrounding element */
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        footer {
+            @include flexColumnCenter;
+            text-align: center;
+            row-gap: 1vh;
+            height: 30vh;
+            background-color: black;
+            color: white;
+
+            i {
+                color: white;
+                width: 5vh;
+                height: 5vh;
+
+            }
+        }
+
+        // body {
+        //     padding: 0;
+        //     margin:0;
+        // }
+    }
+    //***************************************merch ends
+
+    .sale {
+
+        > article {
+            @include flexColumnCenter;
+        }
+
+        a {
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            background-color: black;
+            border-radius: 5px;
+            padding: 2vh;
+            width: 50%;
+            font-size: 14px;
+            border: 2px solid black;
+            transition: .5s;
+        }
+
+        figcaption {
+            display: none;
+        }
+
+        aside {
+            width: 95%;
+            @include flexColumnCenter;
+            padding: 3vh 0 3vh 0;
+            row-gap: 3vh;
+        }
+
+        figure {
+            width: 100%;
+            height: 30vh;
+        }
+
+        aside:nth-child(1) > figure {
+            @include backImage("/img/basketball.jpg");
+        }
+        aside:nth-child(2) > figure {
+            @include backImage("/img/football.jpg");
+        }
+        aside:nth-child(3) > figure {
+            @include backImage("/img/soccer.jpg");
+        }
+        aside:nth-child(4) > figure {
+            @include backImage("/img/golf.jpg");
+        }
+        aside:nth-child(5) > figure {
+            @include backImage("/img/cycling.jpg");
+        }
+        aside:nth-child(6) > figure {
+            @include backImage("/img/boxing.jpg");
+        }
+    }
+
+    .carousel-item > aside {
+        @include flexColumnCenter;
+
+        figure {
+            padding-top: 3vh;
+            padding-bottom: 2vh;
+            width: 100%;
+        }
+    }
+    
+
+    section.normal {
+
+        > article {
+
+            > aside {
+                @include flexColumnCenter;
+                // background-color: black;
+                row-gap: 3vh;
+            }
+        }
+
+        > article:last-child a,
+        > article:last-child p{
+            display: none;
+        }       
+        > article:last-child a:last-child{
+            display: flex;
+            color: white;
+            text-decoration: none;
+            background-color: black;
+            border-radius: 5px;
+            padding: 1vh;
+            border: 2px solid black;
+            transition: .5s;
+        }       
+    }
+
+
+
+    aside.normalFig{
+        box-shadow: 
+        inset 0px 11px 8px -10px black,
+        inset 0px -11px 8px -10px black;
+        > aside {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            align-items: center;
+            padding-bottom: 3vh;
+            column-gap: 1vh;
+            
+        }
+
+        img {
+            width: 100%;
+        }
+        figure {
+            width: 100%;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .btn {
+            background-color: black;
+            border: 2px solid black;
+        } 
+    }
+
+    .salesFigs {
+        @include flexColumnCenter;
+        row-gap: 4vh;
+        padding-bottom: 4vh;
+    }
+
+    .sep {        
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        
+        @include flexColumnCenter;
+        text-align: center;
+        span {
+            width: 30%;
+            height: 0.5vh;
+            background-color: black;
+            padding: 0;
+            margin: 0;
+        }
+
+        h3 {
+            padding-top:2vh ;
+            padding-bottom: 2vh;
+        }
+    }
+
+    .brands {
+
+        img {
+            width: 100%;
+            height: max-content;
+        }
+
+        > article:last-child {
+            @include flexColumnCenter;
+            row-gap: 2vh;
+            width: 50%;
+        }
+    }
+
+
+}

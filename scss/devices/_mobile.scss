@@ -1,6 +1,5 @@
-@media (min-width:200px) {
+@media (min-width:$mediaSizeMobile) {
     @import 'home/mobile';
-    // @import 'merch/mobile';
     @import 'about/mobile';
-    // @import 'jae/mobile';
+    @import 'merch/mobile';
 }
