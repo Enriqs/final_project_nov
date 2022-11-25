@@ -1,0 +1,48 @@
+@media (min-width:300px) {
+
+  // reservation
+  .reservation {
+    row-gap: 3vh;
+
+    h2 {
+      color: $defaultWhite;
+    }
+
+    >article {
+      width: 100%;
+      background-color: $defaultDarkgreen;
+    }
+
+    .policy {
+      width: 95%;
+      padding: 3%;
+      row-gap: 2vh;
+
+      p {
+        color: $defaultYellow;
+        font-weight: 600;
+      }
+
+      li {
+        color: $defaultWhite;
+        font-weight: 400;
+      }
+    }
+
+    .schedule {
+      display: none;
+    }
+
+    a {
+      padding: 2%;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 600;
+      border: 1px solid $defaultWhite;
+      background-color: $defaultDarkgreen;
+      color: $defaultWhite
+    }
+  }
+
+}
