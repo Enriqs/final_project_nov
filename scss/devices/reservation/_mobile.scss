@@ -60,4 +60,49 @@
       color: $defaultMaincolor;
     }
   }
+
+  header {
+    height: 30vh;
+    display: flex;
+    background-color: $defaultWhite;
+    align-items: center;
+    justify-content: center;
+
+    section {
+      width: 19vh;
+      height: 22vh;
+      background-image: url(/img/logo.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h1,
+  h2 {
+    color: $defaultDarkgreen;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
 }
