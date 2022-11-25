@@ -36,4 +36,30 @@
       display: none;
     }
   }
+
+  footer {
+
+    article {
+      width: 80%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    section {
+      display: flex;
+    }
+  }
+
+  h1 {
+    font-size: 50px
+  }
+
+  // ticket
+  .ticket {
+    width: 95%;
+
+    p {
+      font-size: 23px
+    }
+  }
 }
