@@ -115,10 +115,18 @@
     input {
       height: 3vh;
     }
-aside:last-child{
-  input{
-    font-size: 20px;
+
+    aside:last-child {
+      input {
+        font-size: 20px;
+      }
+    }
   }
-}
+
+  // faq
+  .faq {
+    section {
+      width: 100%;
+    }
   }
 }
