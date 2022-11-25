@@ -2,10 +2,10 @@
 
   nav {
 
-    section {
+    >section {
       width: 100%;
 
-      >ul {
+      ul {
         display: none;
       }
     }
@@ -342,13 +342,15 @@
           ul {
             width: 100%;
             padding-top: 0;
-          }
 
-          li {
-            align-items: flex-start;
-            width: 100%;
-            padding: 0;
-            list-style-type: none;
+            li {
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+              width: 100%;
+              padding: 0;
+              list-style-type: none;
+            }
           }
         }
       }
@@ -431,12 +433,13 @@
       position: absolute;
       background-color: rgba(20, 20, 20, .5);
       @include fContent;
-
-      p {
-        font-size: 12px;
-        color: $defaultWhite;
-      }
     }
+
+    p {
+      font-size: 12px;
+      color: $defaultWhite;
+    }
+
 
     h5 {
       color: $defaultWhite;
