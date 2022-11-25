@@ -1,0 +1,1080 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300;400&family=Noto+Sans:wght@300&family=Open+Sans:wght@300;400;500;600;700;800&family=Prompt:wght@200&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Slab&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Open Sans";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin-bottom: 0%;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-bottom: 0%;
+}
+
+h2 {
+  color: rgb(141, 30, 64);
+}
+
+figure {
+  margin-bottom: 0%;
+}
+
+@media (min-width: 200px) and (min-width: 200px) {
+  .header-pablo {
+    background-image: url("/img/worldcup.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    width: 100%;
+  }
+  .navpablo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    color: rgb(138, 135, 135);
+    background-color: rgb(32, 31, 31);
+    width: 100%;
+    /* position: fixed; */
+  }
+  .navpablo img {
+    width: 20vh;
+  }
+  .navpablo .imagemain {
+    padding-left: 1%;
+  }
+  .navpablo ul {
+    display: none;
+  }
+  .navpablo details {
+    width: 95%;
+    font-size: 26px;
+    text-align: right;
+    position: fixed;
+    z-index: 1;
+  }
+  .navpablo details ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(32, 31, 31);
+    margin-top: 2.5vh;
+    margin-bottom: 0;
+    padding-left: 0rem;
+  }
+  .navpablo details li {
+    display: flex;
+    padding: 3%;
+    border-bottom: 1px solid white;
+  }
+  .navpablo details a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .navpablo details summary {
+    padding: 1%;
+    color: rgb(141, 30, 64);
+    border: 4px solid rgba(141, 30, 64, 0.5);
+  }
+  .news-pablo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    align-items: center;
+    row-gap: 2vh;
+    width: 95%;
+  }
+  .news-pablo article {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 3vh;
+    align-items: center;
+  }
+  .news-pablo article aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2vh;
+  }
+  .news-pablo article figure {
+    width: 90%;
+  }
+  .news-pablo article img {
+    width: 100%;
+  }
+  .news-pablo article p {
+    width: 90%;
+    line-height: 1.5;
+  }
+  .news-pablo article a:hover img {
+    border: 5px solid rgb(141, 30, 64);
+  }
+  .stadiums-pablo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    align-items: center;
+    row-gap: 2vh;
+    width: 95%;
+  }
+  .stadiums-pablo iframe {
+    width: 100%;
+  }
+  .stadiums-pablo article {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 3vh;
+  }
+  .stadiums-pablo article figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1vh;
+    border: 2px solid rgb(32, 31, 31);
+    background-color: rgb(32, 31, 31);
+  }
+  .stadiums-pablo article img {
+    width: 100%;
+  }
+  .stadiums-pablo article figcaption {
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+  .stadiums-pablo article p {
+    width: 95%;
+    color: white;
+  }
+  .stadiums-pablo article .stadium-figtop {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 2%;
+  }
+  .stadiums-pablo article .stadium-figbot {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+    justify-content: center;
+  }
+  .stadiums-pablo article .stadium-figbot span {
+    font-size: 20px;
+    color: white;
+  }
+  .stadiums-pablo article .stadium-figbot .capacity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .stadiums-pablo article h4 {
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+  }
+  .history-pablo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    align-items: center;
+    row-gap: 2vh;
+    width: 95%;
+  }
+  .history-pablo article {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 3vh;
+  }
+  .history-pablo .timeline {
+    display: flex;
+    flex-direction: column;
+  }
+  .history-pablo aside {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vh;
+  }
+  .history-pablo aside figure {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(32, 31, 31);
+  }
+  footer {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(32, 31, 31);
+  }
+  footer .sponsor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 95%;
+  }
+  footer img {
+    height: 6vh;
+    width: 6h;
+  }
+  footer section {
+    color: white;
+    font-size: 12px;
+    width: 95%;
+    text-align: center;
+  }
+  .score-ecuador {
+    background-color: rgb(141, 30, 64);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+  }
+  .score-ecuador aside {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    align-items: center;
+    text-align: center;
+  }
+  .score-ecuador h4 {
+    display: flex;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+  }
+  .score-ecuador span {
+    width: 4vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+  }
+  .news-ecuador {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    align-items: center;
+    row-gap: 2vh;
+    width: 95%;
+  }
+  .news-ecuador figure {
+    width: 100%;
+  }
+  .news-ecuador figcaption {
+    line-height: 1.5;
+  }
+  .news-ecuador img {
+    width: 100%;
+  }
+  .news-ecuador h2 {
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+  }
+  .about-ecuador {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    align-items: center;
+    row-gap: 2vh;
+    width: 95%;
+  }
+  .about-ecuador .text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+  .about-ecuador .text p {
+    line-height: 1.5;
+  }
+  .about-ecuador .text img {
+    width: 100%;
+  }
+  .about-ecuador .bars-ecuador {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+  .about-ecuador .bars-ecuador small {
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .about-ecuador .bars-ecuador .markers-ecuador {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+    justify-content: center;
+  }
+  .about-ecuador .bars-ecuador .markers-ecuador .marker-qatar {
+    color: rgb(141, 30, 64);
+  }
+  .about-ecuador .bars-ecuador .ecuador {
+    color: white;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    background-color: rgb(32, 31, 31);
+    --bs-gutter-x: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .about-ecuador .bars-ecuador .ecuador p {
+    display: flex;
+    width: 98%;
+    justify-content: flex-end;
+    padding-right: 2%;
+    position: absolute;
+  }
+  .about-ecuador .bars-ecuador .qatar-possesion {
+    padding-left: 2%;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    background-color: rgb(141, 30, 64);
+    display: flex;
+    align-items: center;
+    width: 47%;
+    border-right: 3px solid white;
+  }
+  .about-ecuador .bars-ecuador .qatar-shots {
+    padding-left: 2%;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    background-color: rgb(141, 30, 64);
+    display: flex;
+    align-items: center;
+    width: 40%;
+    border-right: 3px solid white;
+  }
+  .about-ecuador .bars-ecuador .qatar-shotstarget {
+    padding-left: 2%;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    background-color: rgb(141, 30, 64);
+    display: flex;
+    align-items: center;
+    width: 5%;
+    border-right: 3px solid white;
+  }
+  .about-ecuador .bars-ecuador .qatar-corners {
+    padding-left: 2%;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    background-color: rgb(141, 30, 64);
+    display: flex;
+    align-items: center;
+    width: 10%;
+    border-right: 3px solid white;
+  }
+  .about-ecuador .bars-ecuador .qatar-fouls {
+    padding-left: 2%;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    background-color: rgb(141, 30, 64);
+    display: flex;
+    align-items: center;
+    width: 50%;
+    border-right: 3px solid white;
+  }
+  .blog-ecuador {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    align-items: center;
+    row-gap: 2vh;
+    width: 95%;
+  }
+  .blog-ecuador a {
+    color: rgb(141, 30, 64);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .blog-ecuador a:hover {
+    color: rgb(138, 135, 135);
+  }
+  .blog-ecuador aside {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+  .blog-ecuador aside article {
+    display: flex;
+    -moz-column-gap: 4vh;
+         column-gap: 4vh;
+  }
+  .blog-ecuador aside i {
+    color: rgb(141, 30, 64);
+  }
+  .score-japan {
+    background-color: rgb(141, 30, 64);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+  }
+  .score-japan aside {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    align-items: center;
+    text-align: center;
+  }
+  .score-japan h4 {
+    display: flex;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+  }
+  .score-japan span {
+    width: 4vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+  }
+  .news-japan {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    align-items: center;
+    row-gap: 2vh;
+    width: 95%;
+  }
+  .news-japan figure {
+    width: 100%;
+  }
+  .news-japan figcaption {
+    line-height: 1.5;
+  }
+  .news-japan img {
+    width: 100%;
+  }
+  .news-japan h2 {
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+  }
+  .about-japan {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    align-items: center;
+    row-gap: 2vh;
+    width: 95%;
+  }
+  .about-japan figure {
+    width: 100%;
+  }
+  .about-japan img {
+    width: 100%;
+  }
+  .about-japan .text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+  .about-japan .text p {
+    line-height: 1.5;
+  }
+  .about-japan .bars-japan {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+  .about-japan .bars-japan small {
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .about-japan .bars-japan .markers-japan {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+    justify-content: center;
+  }
+  .about-japan .bars-japan .markers-japan .marker-germany {
+    color: rgb(141, 30, 64);
+  }
+  .about-japan .bars-japan .japan {
+    color: white;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    background-color: rgb(32, 31, 31);
+    --bs-gutter-x: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .about-japan .bars-japan .japan p {
+    display: flex;
+    width: 98%;
+    justify-content: flex-end;
+    padding-right: 2%;
+    position: absolute;
+  }
+  .about-japan .bars-japan .germany-possesion {
+    padding-left: 2%;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    background-color: rgb(141, 30, 64);
+    display: flex;
+    align-items: center;
+    width: 74%;
+    border-right: 3px solid white;
+  }
+  .about-japan .bars-japan .germany-shots {
+    padding-left: 2%;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    background-color: rgb(141, 30, 64);
+    display: flex;
+    align-items: center;
+    width: 68%;
+    border-right: 3px solid white;
+  }
+  .about-japan .bars-japan .germany-shotstarget {
+    padding-left: 2%;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    background-color: rgb(141, 30, 64);
+    display: flex;
+    align-items: center;
+    width: 66%;
+    border-right: 3px solid white;
+  }
+  .about-japan .bars-japan .germany-corners {
+    padding-left: 2%;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    background-color: rgb(141, 30, 64);
+    display: flex;
+    align-items: center;
+    width: 50%;
+    border-right: 3px solid white;
+  }
+  .about-japan .bars-japan .germany-fouls {
+    padding-left: 2%;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    background-color: rgb(141, 30, 64);
+    display: flex;
+    align-items: center;
+    width: 30%;
+    border-right: 3px solid white;
+  }
+  .blog-japan {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    align-items: center;
+    row-gap: 2vh;
+    width: 95%;
+  }
+  .blog-japan a {
+    color: rgb(141, 30, 64);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .blog-japan a:hover {
+    color: rgb(138, 135, 135);
+  }
+  .blog-japan aside {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+  .blog-japan aside article {
+    display: flex;
+    -moz-column-gap: 4vh;
+         column-gap: 4vh;
+  }
+  .blog-japan aside i {
+    color: rgb(141, 30, 64);
+  }
+  .blog-japan article {
+    display: flex;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+  }
+  .score-spain {
+    background-color: rgb(141, 30, 64);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+  }
+  .score-spain aside {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    align-items: center;
+    text-align: center;
+  }
+  .score-spain h4 {
+    display: flex;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+  }
+  .score-spain span {
+    width: 4vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  .news-spain {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    align-items: center;
+    row-gap: 2vh;
+    width: 95%;
+  }
+  .news-spain p {
+    line-height: 1.5;
+  }
+  .news-spain figure {
+    width: 100%;
+  }
+  .news-spain figcaption {
+    line-height: 1.5;
+  }
+  .news-spain img {
+    width: 100%;
+  }
+  .news-spain h2 {
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+  }
+  .about-spain {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    align-items: center;
+    row-gap: 2vh;
+    width: 95%;
+  }
+  .about-spain figure {
+    width: 100%;
+  }
+  .about-spain img {
+    width: 100%;
+  }
+  .about-spain .text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+  .about-spain .text p {
+    line-height: 1.5;
+  }
+  .about-spain .bars-spain {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+  .about-spain .bars-spain small {
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .about-spain .bars-spain .markers-spain {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+    justify-content: center;
+  }
+  .about-spain .bars-spain .markers-spain .marker-spain {
+    color: rgb(141, 30, 64);
+  }
+  .about-spain .bars-spain .Costa-Rica {
+    color: white;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    background-color: rgb(32, 31, 31);
+    --bs-gutter-x: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .about-spain .bars-spain .Costa-Rica p {
+    display: flex;
+    width: 98%;
+    justify-content: flex-end;
+    padding-right: 2%;
+    position: absolute;
+  }
+  .about-spain .bars-spain .spain-possesion {
+    padding-left: 2%;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    background-color: rgb(141, 30, 64);
+    display: flex;
+    align-items: center;
+    width: 82%;
+    border-right: 3px solid white;
+  }
+  .about-spain .bars-spain .spain-shots {
+    padding-left: 2%;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    background-color: rgb(141, 30, 64);
+    display: flex;
+    align-items: center;
+    width: 99%;
+    border-right: 3px solid white;
+  }
+  .about-spain .bars-spain .spain-shotstarget {
+    padding-left: 2%;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    background-color: rgb(141, 30, 64);
+    display: flex;
+    align-items: center;
+    width: 99%;
+    border-right: 3px solid white;
+  }
+  .about-spain .bars-spain .spain-corners {
+    padding-left: 2%;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    background-color: rgb(141, 30, 64);
+    display: flex;
+    align-items: center;
+    width: 99%;
+    border-right: 3px solid white;
+  }
+  .about-spain .bars-spain .spain-fouls {
+    padding-left: 2%;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    background-color: rgb(141, 30, 64);
+    display: flex;
+    align-items: center;
+    width: 40%;
+    border-right: 3px solid white;
+  }
+  .blog-spain {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    align-items: center;
+    row-gap: 2vh;
+    width: 95%;
+  }
+  .blog-spain a {
+    color: rgb(141, 30, 64);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .blog-spain a:hover {
+    color: rgb(138, 135, 135);
+  }
+  .blog-spain aside {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+  .blog-spain aside article {
+    display: flex;
+    -moz-column-gap: 4vh;
+         column-gap: 4vh;
+  }
+  .blog-spain aside i {
+    color: rgb(141, 30, 64);
+  }
+  .about-pablo {
+    border-top: 1px solid rgb(32, 31, 31);
+    border-bottom: 1px solid rgb(32, 31, 31);
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    align-items: center;
+    row-gap: 2vh;
+    width: 95%;
+    align-items: center;
+  }
+  .about-pablo > h2 {
+    font-size: 40px;
+  }
+  .about-pablo .news-preview {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    align-items: center;
+  }
+  .about-pablo .news-preview article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+  .about-pablo .news-preview aside {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-pablo .news-preview img {
+    width: 100%;
+  }
+  .about-pablo .timeline-preview {
+    display: flex;
+    justify-content: center;
+  }
+  .about-pablo .timeline-preview figure {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgb(32, 31, 31);
+    border-bottom: 1px solid rgb(32, 31, 31);
+  }
+  .about-pablo .stadiums-preview figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1vh;
+    border: 2px solid rgb(32, 31, 31);
+    background-color: rgb(32, 31, 31);
+  }
+  .about-pablo .stadiums-preview img {
+    width: 100%;
+  }
+  .about-pablo .stadiums-preview figcaption {
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+  .about-pablo .stadiums-preview p {
+    width: 95%;
+    color: white;
+  }
+  .about-pablo .stadiums-preview .stadium-figtop {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 2%;
+  }
+  .about-pablo .stadiums-preview .stadium-figbot {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+    justify-content: center;
+  }
+  .about-pablo .stadiums-preview .stadium-figbot span {
+    font-size: 20px;
+    color: white;
+  }
+  .about-pablo .stadiums-preview .stadium-figbot .capacity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about-pablo .stadiums-preview h4 {
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+  }
+  .indexheader video {
+    width: 100%;
+  }
+}
+@media (min-width: 600px) and (min-width: 600px) {
+  .navpablo .imagemain {
+    padding-left: 2%;
+  }
+  .navpablo details {
+    width: 85%;
+    font-size: 40px;
+    z-index: 1;
+  }
+  .navpablo details ul {
+    margin-top: 2.5vh;
+  }
+  .news-pablo > h2 {
+    font-weight: 600;
+    font-size: 40px;
+  }
+  .news-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .news-content article {
+    width: 50%;
+  }
+  .history-pablo article p {
+    line-height: 1.5;
+  }
+  .history-pablo article h2 {
+    text-align: center;
+  }
+  .history-pablo .timeline figure {
+    padding-bottom: 1%;
+  }
+  .history-pablo aside {
+    row-gap: 2vh;
+  }
+  .stadiums-pablo article {
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+    padding-left: 5%;
+  }
+  .stadiums-pablo article figure {
+    width: 45%;
+  }
+  .blog-ecuador aside,
+.blog-japan aside,
+.blog-spain aside {
+    width: 60%;
+  }
+  .about-ecuador {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .about-ecuador .text {
+    width: 50%;
+    row-gap: 3vh;
+  }
+  .about-ecuador .bars-ecuador {
+    width: 45%;
+    row-gap: 1vh;
+  }
+  .about-japan .text {
+    width: 95%;
+    row-gap: 2vh;
+  }
+  .about-japan .bars-japan {
+    width: 50%;
+  }
+  .about-spain {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .about-spain .text {
+    width: 55%;
+    text-align: center;
+    row-gap: 3.7vh;
+  }
+  .about-spain .bars-spain {
+    width: 40%;
+    row-gap: 1vh;
+  }
+}
+@media (min-width: 1000px) and (min-width: 1000px) {
+  .header-pablo {
+    height: 60vh;
+  }
+  .navpablo ul {
+    display: flex;
+    width: 60%;
+  }
+  .navpablo ul li {
+    display: flex;
+    /* border: 1px solid red; */
+    width: 100%;
+    justify-content: center;
+  }
+  .navpablo a {
+    width: 100%;
+    padding: 10%;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5%;
+    color: rgb(138, 135, 135);
+  }
+  .navpablo a:hover {
+    background-color: rgb(141, 30, 64);
+    color: white;
+  }
+  .navpablo details {
+    display: none;
+  }
+  .about-japan img {
+    height: 50vh;
+    width: 50vh;
+  }
+  .score-ecuador,
+.score-japan,
+.score-spain {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
