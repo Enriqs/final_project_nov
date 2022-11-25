@@ -20,6 +20,19 @@
     }
   }
 
+  // info
+  .info {
+    details {
+      >ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        li{
+          width: 50%;
+      }}
+    }
+  }
+
   // event
   .event {
     height: 20vh;
