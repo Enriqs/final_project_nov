@@ -1,0 +1,34 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Open Sans";
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    margin-bottom: 0%;
+}
+
+h1,h2,h3,h4,h5{
+    margin-bottom: 0%
+}
+h2{
+    color: $h2color;
+}
+figure{
+    margin-bottom: 0%;
+}

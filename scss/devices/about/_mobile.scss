@@ -1,0 +1,779 @@
+@media(min-width: 200px){
+
+    .header-pablo{
+        @include backgroundimage("/img/worldcup.JPG");
+        display: flex;
+        justify-content: center;
+        height: 30vh;
+        width: 100%;
+    }
+    .navpablo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1%;
+        color: $textcolor;
+        background-color: $background;
+        width: 100%;
+        /* position: fixed; */
+
+        img{
+            width: 20vh;
+        }
+        .imagemain{
+            padding-left: 1%;
+        }
+
+        ul{
+            // position: absolute;
+            display: none;
+        }
+
+        details{
+            // padding-top: 8%;
+            width: 95%;
+            font-size: 26px;
+            text-align: right;
+            position: fixed;
+            z-index: 1;
+
+            ul{
+                @include column;
+                position: absolute;
+                width: 100%;
+                background-color: $background;
+                margin-top: 2.5vh;
+                margin-bottom: 0;
+                padding-left: 0rem;
+                
+            }
+
+            li{
+                display: flex;
+                padding: 3%;
+                border-bottom: 1px solid white;
+            }
+            a{
+                color: white;
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+            summary{
+                padding: 1%;
+                // background-color: rgb(141, 30, 64);
+                color: rgb(141, 30, 64);
+                border: 4px solid rgba(141, 30, 64, .5)
+                // border-radius: 5%
+            }
+        }
+
+
+    }
+
+    .news-pablo{
+        @include sectionflex;
+
+        article{
+            @include articleflex;
+            align-items: center;
+
+            aside{
+                @include column;
+                align-items: center;
+                row-gap: 2vh;
+            }
+
+            figure{
+                width: 90%
+            }
+
+            img{
+                width: 100%
+            }
+            p{
+                width: 90%;
+                line-height: 1.5
+            }
+
+            a:hover img{
+                border: 5px solid rgb(141, 30, 64)
+            }
+        }
+
+    }
+
+    .stadiums-pablo{
+        @include sectionflex;
+
+        iframe{
+            width: 100%;
+        }
+
+        article{
+            @include articleflex;
+
+            figure{
+                @include column;
+                align-items: center;
+                row-gap: 1vh;
+                border: 2px solid $background;
+                background-color: $background;
+            }
+
+            img{
+                width: 100%;
+            }
+
+            figcaption{
+                line-height: 1.5;
+                @include column;
+                row-gap: 3vh;
+            }
+            p{
+                width: 95%;
+                color: white;
+            }
+            .stadium-figtop{
+                display: flex;
+                flex-direction: column;
+                row-gap: 3vh;
+                text-align: center;
+                border-bottom: 1px solid white;
+                padding-bottom: 2%;
+            }
+
+            .stadium-figbot{
+                display: flex;
+                column-gap: 3vh;
+                justify-content: center;
+
+                span{
+                    font-size: 20px;
+                    color: white;
+                }
+
+                .capacity{
+                    @include column;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+
+            h4{
+                color: white;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    .history-pablo{
+        @include sectionflex;
+        
+        article{
+            @include articleflex
+        }
+
+        .timeline{
+            @include column;
+
+        }
+
+        aside{
+            @include column;
+            row-gap: 4vh;
+
+            figure{
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid $background;
+            }
+        }
+    }
+
+    /****/
+    footer{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $background;
+
+        .sponsor{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            width: 95%;
+        }
+        img{
+            height:6vh;
+            width: 6h;
+        }
+        section{
+            color: white;
+            font-size: 12px;
+            width: 95%;
+            text-align: center;
+        }
+    }
+    .score-ecuador{
+        background-color: rgb(141, 30, 64) ;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        color: white;
+        aside{
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            align-items: center;
+            text-align: center;
+        }
+
+        h4{
+            display: flex;
+            column-gap: 1vh;
+        }
+        span{
+            width: 4vh;
+            color: white;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+        }
+    }
+    .news-ecuador{
+        @include sectionflex;
+
+        
+        figure{
+            width: 100%;
+        }
+
+        figcaption{
+            line-height: 1.5;
+        }
+        img{
+            // height: 15vh;
+            width: 100%;
+        }
+        h2{
+            text-transform: uppercase;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .about-ecuador{
+        @include sectionflex;
+
+        .text{
+            @include column;
+            row-gap: 2vh;
+            p{
+                line-height: 1.5;
+            }
+
+            img{
+                width: 100%
+            }
+        }
+
+        .bars-ecuador{
+            @include column;
+            width: 95%;
+            small{
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+            .markers-ecuador{
+                display: flex;
+                column-gap: 3vh;
+                justify-content: center;
+                .marker-qatar{
+                    color: rgb(141, 30, 64);
+                }
+    
+            }
+
+            .ecuador{
+                @include team1;
+                position: relative;
+                p{
+                    display: flex;
+                    width: 98%;
+                    justify-content: flex-end;
+                    padding-right: 2%;
+                    position: absolute;
+                }
+            }
+            .qatar-possesion{
+                @include team2;
+                width: 47%;
+                border-right: 3px solid white;
+            }
+
+            .qatar-shots{
+                @include team2;
+                width: 40%;
+                border-right: 3px solid white;
+            }
+            .qatar-shotstarget{
+                @include team2;
+                width: 5%;
+                border-right: 3px solid white;
+            }
+
+            .qatar-corners{
+                @include team2;
+                width: 10%;
+                border-right: 3px solid white;
+            }
+
+            .qatar-fouls{
+                @include team2;
+                width: 50%;
+                border-right: 3px solid white;
+            }
+        }
+    }
+
+    .blog-ecuador{
+        @include sectionflex;
+        a{
+            color: rgb(141, 30, 64);
+            text-decoration: none;
+            font-weight: 600;
+            &:hover{
+                color: $textcolor;
+            }
+        }
+        aside{
+            @include column;
+            row-gap: 2vh;
+
+            article{
+                display: flex;
+                column-gap: 4vh;
+            }
+
+            i{
+                color: rgb(141, 30, 64);
+            }
+        }
+
+    }
+
+    .score-japan{
+        background-color: rgb(141, 30, 64) ;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        color: white;
+        aside{
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            align-items: center;
+            text-align: center;
+        }
+
+        h4{
+            display: flex;
+            column-gap: 1vh;
+        }
+        span{
+            width: 4vh;
+            color: black;
+            display: flex;
+            justify-content: center;
+            background-color: yellow;
+        }
+    }
+
+    .news-japan{
+        @include sectionflex;
+
+        
+        figure{
+            width: 100%;
+        }
+
+        figcaption{
+            line-height: 1.5;
+        }
+        img{
+            // height: 15vh;
+            width: 100%;
+        }
+        h2{
+            text-transform: uppercase;
+            width: 100%;
+            text-align: center;
+        } 
+    }
+
+    .about-japan{
+        @include sectionflex;
+
+        figure{
+            width: 100%;
+        }
+        img{
+            // height: 15vh;
+            width: 100%;
+        }
+
+        .text{
+            @include column;
+            row-gap: 2vh;
+            p{
+                line-height: 1.5;
+            }
+        }
+
+        .bars-japan{
+            @include column;
+            width: 95%;
+            small{
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+            .markers-japan{
+                display: flex;
+                column-gap: 3vh;
+                justify-content: center;
+                .marker-germany{
+                    color: rgb(141, 30, 64);
+                }
+    
+            }
+            .japan{
+                @include team1;
+                position: relative;
+                p{
+                    display: flex;
+                    width: 98%;
+                    justify-content: flex-end;
+                    padding-right: 2%;
+                    position: absolute;
+                }
+            }
+            .germany-possesion{
+                @include team2;
+                width: 74%;
+                border-right: 3px solid white;
+            }
+
+            .germany-shots{
+                @include team2;
+                width: 68%;
+                border-right: 3px solid white;
+            }
+            .germany-shotstarget{
+                @include team2;
+                width: 66%;
+                border-right: 3px solid white;
+            }
+
+            .germany-corners{
+                @include team2;
+                width: 50%;
+                border-right: 3px solid white;
+            }
+
+            .germany-fouls{
+                @include team2;
+                width: 30%;
+                border-right: 3px solid white;
+            }
+        }
+    }
+
+    .blog-japan{
+        @include sectionflex;
+        a{
+            color: rgb(141, 30, 64);
+            text-decoration: none;
+            font-weight: 600;
+            &:hover{
+                color: $textcolor;
+            }
+        }
+        aside{
+            @include column;
+            row-gap: 2vh;
+
+            article{
+                display: flex;
+                column-gap: 4vh;
+            }
+
+            i{
+                color: rgb(141, 30, 64);
+            }
+        }
+        article{
+            display: flex;
+            column-gap: 1vh;
+        }
+    }
+
+    .score-spain{
+        background-color: rgb(141, 30, 64) ;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        color: white;
+        aside{
+            display: flex;
+            flex-direction: column;
+            width: 95%;
+            align-items: center;
+            text-align: center;
+        }
+
+        h4{
+            display: flex;
+            column-gap: 1vh;
+        }
+        span{
+            width: 4vh;
+            color: black;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+        }
+    }
+
+    .news-spain{
+        @include sectionflex;
+
+        p{
+            line-height: 1.5;
+        }
+        figure{
+            width: 100%;
+        }
+
+        figcaption{
+            line-height: 1.5;
+        }
+        img{
+            // height: 15vh;
+            width: 100%;
+        }
+        h2{
+            text-transform: uppercase;
+            width: 100%;
+            text-align: center;
+        } 
+    }
+
+    .about-spain{
+        @include sectionflex;
+
+        figure{
+            width: 100%;
+        }
+        img{
+            width: 100%;
+        }
+
+        .text{
+            @include column;
+            row-gap: 2vh;
+            p{
+                line-height: 1.5;
+            }
+        }
+
+        .bars-spain{
+            @include column;
+            width: 95%;
+            small{
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+            .markers-spain{
+                display: flex;
+                column-gap: 3vh;
+                justify-content: center;
+                .marker-spain{
+                    color: rgb(141, 30, 64);
+                }
+    
+            }
+
+            .Costa-Rica{
+                @include team1;
+                position: relative;
+                p{
+                    display: flex;
+                    width: 98%;
+                    justify-content: flex-end;
+                    padding-right: 2%;
+                    position: absolute;
+                }
+            }
+            .spain-possesion{
+                @include team2;
+                width: 82%;
+                border-right: 3px solid white;
+            }
+
+            .spain-shots{
+                @include team2;
+                width: 99%;
+                border-right: 3px solid white;
+            }
+            .spain-shotstarget{
+                @include team2;
+                width: 99%;
+                border-right: 3px solid white;
+            }
+
+            .spain-corners{
+                @include team2;
+                width: 99%;
+                border-right: 3px solid white;
+            }
+
+            .spain-fouls{
+                @include team2;
+                width: 40%;
+                border-right: 3px solid white;
+            }
+        }
+    }
+
+    .blog-spain{
+        @include sectionflex;
+        a{
+            color: rgb(141, 30, 64);
+            text-decoration: none;
+            font-weight: 600;
+            &:hover{
+                color: $textcolor;
+            }
+        }
+        aside{
+            @include column;
+            row-gap: 2vh;
+
+            article{
+                display: flex;
+                column-gap: 4vh;
+            }
+
+            i{
+                color: rgb(141, 30, 64);
+            }
+        }  
+    }
+
+    .about-pablo{
+        border-top: 1px solid rgb(32, 31, 31);
+        border-bottom: 1px solid rgb(32, 31, 31);
+        @include sectionflex;
+        align-items: center;
+        > h2{
+            font-size: 40px
+        }
+        .news-preview{
+            @include column;
+            row-gap: 2vh;
+            align-items: center;
+
+            article{
+                @include column;
+                row-gap: 2vh;
+            }
+
+            aside{
+                @include column;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .timeline-preview{
+            display: flex;
+            justify-content: center;
+
+            figure{
+                display: flex;
+                align-items: center;
+                border-top: 1px solid rgb(32, 31, 31);
+                border-bottom: 1px solid rgb(32, 31, 31);
+            }
+        }
+
+        .stadiums-preview{
+            figure{
+                @include column;
+                align-items: center;
+                row-gap: 1vh;
+                border: 2px solid $background;
+                background-color: $background;
+            }
+
+            img{
+                width: 100%;
+            }
+
+            figcaption{
+                line-height: 1.5;
+                @include column;
+                row-gap: 3vh;
+            }
+            p{
+                width: 95%;
+                color: white;
+            }
+            .stadium-figtop{
+                display: flex;
+                flex-direction: column;
+                row-gap: 3vh;
+                text-align: center;
+                border-bottom: 1px solid white;
+                padding-bottom: 2%;
+            }
+
+            .stadium-figbot{
+                display: flex;
+                column-gap: 3vh;
+                justify-content: center;
+
+                span{
+                    font-size: 20px;
+                    color: white;
+                }
+
+                .capacity{
+                    @include column;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+
+            h4{
+                color: white;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    .indexheader{
+        video{
+            width: 100%;
+        }
+    }
+
+    .logopablo {
+        height: fit-content;
+    }
+}

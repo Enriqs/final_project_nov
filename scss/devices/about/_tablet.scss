@@ -1,0 +1,116 @@
+@media(min-width: 600px){
+    .navpablo{
+        .imagemain{
+            padding-left: 2%;
+        }
+
+        details{
+            width: 85%;
+            font-size: 40px;
+            z-index: 1;
+
+            ul{
+                margin-top: 2.5vh;
+            }
+        }
+    }
+    .news-pablo{
+       > h2{
+            font-weight: 600;
+            font-size: 40px;
+        }
+    }
+    .news-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        article{
+            width: 50%;
+        }
+    }
+
+    .history-pablo{
+        article{
+            p{
+                line-height: 1.5;
+            }
+            h2{
+                text-align: center;
+            }
+        }
+
+        .timeline{
+            figure{
+                padding-bottom: 1%;
+            }
+        }
+
+        aside{
+            row-gap: 2vh;
+        }
+    }
+
+    .stadiums-pablo{
+        article{
+            flex-direction: row;
+            flex-wrap: wrap;
+            // justify-content: center;
+            column-gap: 3vh;
+            padding-left: 5%;
+
+            figure{
+                width: 45%;
+            }
+        }
+
+    }
+
+    .blog-ecuador,
+    .blog-japan,
+    .blog-spain{
+        aside{
+            width: 60%;
+        }
+    }
+
+    .about-ecuador{
+        flex-direction: row;
+        justify-content: space-evenly;
+        .text{
+            width: 50%;
+            row-gap: 3vh;
+        }
+
+        .bars-ecuador{
+            width: 45%;
+            row-gap: 1vh;
+        }
+    }
+
+    .about-japan{
+        .text{
+            width: 95%;
+            row-gap: 2vh;
+
+        }
+
+        .bars-japan{
+            width: 50%;
+        }
+    }
+
+    .about-spain{
+        flex-direction: row;
+        justify-content: space-evenly;
+        .text{
+            width: 55%;
+            text-align: center;
+            row-gap: 3.7vh;
+        }
+
+        .bars-spain{
+            width: 40%;
+            row-gap: 1vh;
+        }
+    }
+}
