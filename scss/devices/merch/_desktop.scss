@@ -1,16 +1,50 @@
 @media (min-width:$mediaSizeDesktop) {
     .merch {
 
-        background-color: red!important;
+        
         nav{
+            
 
             > ul {
                 display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 70%;
+                background-color: black;
+                height: 100%;
+                text-align: center;
+                list-style-type: none;
+                // position: fixed;
             } 
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
 
             > details {
                 display: none;
             }
+        }
+    }
+
+    .carousels {
+        > article.one{
+            width: 50%;
+        }
+    }
+
+    .sale {
+
+        aside {
+            width: 30%;
+        }
+    }
+
+    .ad {
+
+        > article {
+            width: 50%;
         }
     }
 }

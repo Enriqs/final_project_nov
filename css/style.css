@@ -1,0 +1,565 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Alexandria", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 200px) and (min-width: 200px) {
+  nav {
+    background-color: pink;
+    height: 12vh;
+  }
+  img {
+    height: 30vh;
+  }
+  article {
+    width: 30%;
+  }
+}
+@media (min-width: 200px) and (min-width: 200px) {
+  .merch img {
+    height: 30vh;
+  }
+  .merch article {
+    width: 100%;
+  }
+  .merch main {
+    overflow: hidden;
+  }
+  .merch main,
+.merch main > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .merch h2 > span {
+    display: none;
+  }
+  .merch nav {
+    background-color: white;
+    height: 10vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .merch nav > ul {
+    display: none;
+  }
+  .merch details.bars {
+    width: 85%;
+    text-align: end;
+    position: fixed;
+    z-index: 1200;
+  }
+  .merch details.bars > ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    background-color: #3D3F3F;
+    text-align: start;
+    padding: 0;
+    list-style-type: none;
+  }
+  .merch details.bars li {
+    display: flex;
+    width: 100%;
+    border: 1px solid white;
+    background-color: black;
+    transition: 0.5s;
+  }
+  .merch details.bars a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    padding: 2%;
+  }
+  .merch details.bars > summary {
+    font-size: 25px;
+    font-weight: 800;
+  }
+  .merch header {
+    background-color: black;
+    z-index: -1;
+    height: 12vh;
+    padding-top: 1vh;
+  }
+  .merch header > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .merch header h1 {
+    font-size: 14px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.322);
+  }
+  .merch header i {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 6vh;
+    height: 6vh;
+    background-color: rgba(0, 0, 0, 0.322);
+  }
+  .merch header article:nth-child(3) {
+    display: none;
+  }
+  .merch details.login {
+    width: 30%;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+  .merch details.login summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    width: 9vh;
+    height: 9vh;
+    border-radius: 50%;
+    font-size: 26px;
+    border: 2px solid white;
+    transition: 0.5s;
+  }
+  .merch details.login .formFather {
+    padding-top: 1vh;
+    width: 35vh;
+    position: absolute;
+    z-index: 1099;
+  }
+  .merch details.login form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    row-gap: 0.5vh;
+  }
+  .merch details.login input {
+    width: 100%;
+    border: 1px solid black;
+    padding: 1vh;
+    background-color: white;
+    color: black;
+  }
+  .merch .loginFather {
+    height: 15vh;
+    flex-direction: row;
+    background: linear-gradient(#000000, white);
+  }
+  .merch .loginFather > h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+  }
+  .merch .carousels {
+    padding-top: 5vh;
+  }
+  .merch .carousels > article {
+    width: 100%;
+  }
+  .merch .carousels img {
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .merch aside > button.btn + p {
+    display: none;
+  }
+  .merch .ad {
+    height: 75vh;
+  }
+  .merch .ad > article {
+    position: relative;
+  }
+  .merch video {
+    width: 100%;
+    position: absolute;
+    left: 50%; /* % of surrounding element */
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .merch footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    row-gap: 1vh;
+    height: 30vh;
+    background-color: black;
+    color: white;
+  }
+  .merch footer i {
+    color: white;
+    width: 5vh;
+    height: 5vh;
+  }
+  .sale > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .sale a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+    padding: 2vh;
+    width: 50%;
+    font-size: 14px;
+    border: 2px solid black;
+    transition: 0.5s;
+  }
+  .sale figcaption {
+    display: none;
+  }
+  .sale aside {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3vh 0 3vh 0;
+  }
+  .sale figure {
+    width: 100%;
+    height: 30vh;
+  }
+  .sale aside:nth-child(1) > figure {
+    background-image: url("/img/basketball.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .sale aside:nth-child(2) > figure {
+    background-image: url("/img/football.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .sale aside:nth-child(3) > figure {
+    background-image: url("/img/soccer.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .sale aside:nth-child(4) > figure {
+    background-image: url("/img/golf.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .sale aside:nth-child(5) > figure {
+    background-image: url("/img/cycling.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .sale aside:nth-child(6) > figure {
+    background-image: url("/img/boxing.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .carousel-item > aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .carousel-item > aside figure {
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    width: 100%;
+  }
+  section.normal > article > aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  section.normal > article:last-child a,
+section.normal > article:last-child p {
+    display: none;
+  }
+  section.normal > article:last-child a:last-child {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 5px;
+    padding: 1vh;
+    border: 2px solid black;
+    transition: 0.5s;
+  }
+  aside.normalFig {
+    box-shadow: inset 0px 11px 8px -10px black, inset 0px -11px 8px -10px black;
+  }
+  aside.normalFig > aside {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    padding-bottom: 3vh;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+  }
+  aside.normalFig img {
+    width: 100%;
+  }
+  aside.normalFig figure {
+    width: 100%;
+  }
+  aside.normalFig a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  aside.normalFig .btn {
+    background-color: black;
+    border: 2px solid black;
+  }
+  .salesFigs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    row-gap: 4vh;
+    padding-bottom: 4vh;
+  }
+  .sep {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .sep span {
+    width: 30%;
+    height: 0.5vh;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+  }
+  .sep h3 {
+    padding-top: 2vh;
+  }
+  .brands img {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .brands > article:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    row-gap: 2vh;
+    width: 50%;
+  }
+}
+@media (min-width: 600px) and (min-width: 600px) {
+  .merch details.login summary:hover {
+    color: black;
+    background-color: white;
+  }
+  .merch details.login [type=submit]:hover {
+    background-color: black;
+    color: white;
+  }
+  .merch details.bars li:hover {
+    display: flex;
+    width: 100%;
+    border: 1px solid white;
+    background-color: white;
+  }
+  .merch details.bars a:hover {
+    color: black;
+  }
+  .merch section.loginFather {
+    -moz-column-gap: 20%;
+         column-gap: 20%;
+  }
+  .merch .carousel-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .merch video {
+    cursor: pointer;
+  }
+  .merch h2 {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+    width: 70%;
+  }
+  .merch h2 > span {
+    display: flex;
+    text-transform: uppercase;
+    color: pink;
+  }
+  .merch footer i:hover {
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    padding: 0;
+  }
+  .login {
+    padding-left: 5vh;
+  }
+  .carousels h5 {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px black;
+    font-size: 30px;
+  }
+  .carousels p {
+    text-shadow: 2px 2px 2px black;
+    font-size: 22px;
+  }
+  article.fix {
+    flex-direction: row;
+    flex-wrap: wrap;
+    -moz-column-gap: 5vh;
+         column-gap: 5vh;
+  }
+  .sale aside {
+    width: 40%;
+  }
+  .sale figure {
+    width: 100%;
+    height: 30vh;
+    transition: 0.5s;
+  }
+  .sale figcaption {
+    transition: 0.5s;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  .sale figure:hover > figcaption {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.39);
+    color: white;
+    font-size: 26px;
+    text-align: center;
+  }
+  .sale p {
+    width: 100%;
+    padding-top: 2vh;
+    transition: 0.5s;
+  }
+  .sale a:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+  }
+  .brands > article:last-child {
+    width: 80%;
+    height: 22vh;
+    flex-direction: row;
+    -moz-column-gap: 15%;
+         column-gap: 15%;
+  }
+  .brands > article:last-child > a {
+    width: 24%;
+    transition: 0.4s;
+  }
+  .brands > article:last-child > a:hover {
+    border-bottom: 4px solid black;
+  }
+  .salesFigs {
+    flex-direction: row;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+    flex-wrap: wrap;
+  }
+  .salesFigs > .normalFig {
+    width: 40%;
+  }
+  section.normal > article:last-child a:last-child:hover {
+    display: flex;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid black;
+  }
+  aside.normalFig .btn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+  .ad > article {
+    width: 70%;
+  }
+}
+@media (min-width: 1000px) and (min-width: 1000px) {
+  .merch nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    background-color: black;
+    height: 100%;
+    text-align: center;
+    list-style-type: none;
+  }
+  .merch nav a {
+    text-decoration: none;
+    color: white;
+  }
+  .merch nav > details {
+    display: none;
+  }
+  .carousels > article.one {
+    width: 50%;
+  }
+  .sale aside {
+    width: 30%;
+  }
+  .ad > article {
+    width: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
