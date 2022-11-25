@@ -147,4 +147,28 @@
       }
     }
   }
+
+  // scss
+  .ticket,
+  .tuser {
+    width: 95%;
+  }
+
+  // ticket
+  .ticket {
+    padding-top: 5vh;
+    row-gap: 3vh;
+
+    article {
+      row-gap: 2vh;
+    }
+
+    p {
+      text-align: center;
+      font-size: 15px;
+      font-weight: 300;
+      color: $defaultGreen;
+      line-height: 1.5;
+    }
+  }
 }
