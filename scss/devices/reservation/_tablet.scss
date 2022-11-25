@@ -58,6 +58,16 @@
     font-size: 40px;
   }
 
+  form {
+    aside:nth-child(3) {
+      column-gap: 1vh;
+
+      input {
+        width: 70%;
+      }
+    }
+  }
+
   // ticket
   .ticket {
     width: 95%;
@@ -79,5 +89,36 @@
     label {
       font-size: 20px;
     }
+  }
+
+  // info
+  .info {
+
+
+    aside {
+      flex-direction: row;
+      column-gap: 7vh;
+
+      &:nth-child(3) label {
+        width: 20vh;
+      }
+    }
+
+    label {
+      width: 0;
+      font-size: 20px;
+      display: flex;
+      justify-content: left;
+
+    }
+
+    input {
+      height: 3vh;
+    }
+aside:last-child{
+  input{
+    font-size: 20px;
+  }
+}
   }
 }
