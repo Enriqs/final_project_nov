@@ -171,4 +171,43 @@
       line-height: 1.5;
     }
   }
+
+  // section policy
+  .policy {
+    p {
+      text-align: center;
+      font-size: 12px;
+      font-weight: 500;
+      color: $defaultGray2;
+    }
+
+    article {
+      display: flex;
+      justify-content: center;
+    }
+
+    ul {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1vh;
+      margin-bottom: 0;
+      padding-left: 0;
+    }
+
+    li {
+      list-style-type: none;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    aside {
+      width: 100%;
+      @include fRow;
+      justify-content: center;
+      column-gap: 1vh;
+      text-transform: capitalize;
+    }
+  }
+
 }
