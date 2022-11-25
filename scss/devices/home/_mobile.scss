@@ -1,14 +1,51 @@
-@media (min-width:$mediaSizeMobile) {
 
-    nav {
-        background-color: pink;
-        height: 12vh;
+
+
+@media (min-width:200px) {
+
+  // reservation
+  .reservation {
+    row-gap: 3vh;
+
+    h2 {
+      color: $defaultWhite;
     }
-    img {
-        height: 30vh;
+
+    >article {
+      width: 100%;
+      background-color: $defaultDarkgreen;
     }
-    article{
-        width: 30%;
+
+    .policy {
+      width: 95%;
+      padding: 3%;
+      row-gap: 2vh;
+
+      p {
+        color: $defaultYellow;
+        font-weight: 600;
+      }
+
+      li {
+        color: $defaultWhite;
+        font-weight: 400;
+      }
     }
+
+    .schedule {
+      display: none;
+    }
+
+    a {
+      padding: 2%;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 600;
+      border: 1px solid $defaultWhite;
+      background-color: $defaultDarkgreen;
+      color: $defaultWhite
+    }
+  }
 
 }

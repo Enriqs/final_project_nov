@@ -1,0 +1,468 @@
+@media (min-width:200px) {
+  nav,
+nav>section,
+header,
+header>section,
+main,
+main section,
+main article,
+main aside,
+article,
+form,
+fieldset,
+footer {
+  @include fColumn;
+  align-items: center;
+}
+
+main {
+  row-gap: 5vh;
+}
+
+  nav {
+
+    >section {
+      width: 100%;
+
+      ul {
+        display: none;
+      }
+    }
+
+    details {
+      width: 95%;
+      padding: 2%;
+      position: relative;
+      position: fixed;
+      text-align: right;
+      justify-content: center;
+      z-index: 6;
+
+      ul {
+        width: 100%;
+        height: 25vh;
+        background-color: $defaultWhite;
+        position: absolute;
+        @include fColumn;
+        align-items: flex-start;
+      }
+
+      li {
+        width: 100%;
+        height: 100%;
+        @include fContent;
+      }
+
+      a {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        text-align: start;
+        font-weight: 500;
+      }
+    }
+
+    summary {
+      font-size: 25px;
+      display: flex;
+      text-align: right;
+      justify-content: flex-end;
+    }
+
+    ul {
+      margin-bottom: 0;
+      padding-left: 0;
+    }
+
+    i,
+    a {
+      color: $defaultMaincolor;
+    }
+  }
+
+  header {
+    height: 35vh;
+    display: flex;
+    background-color: $defaultWhite;
+    align-items: center;
+    justify-content: center;
+
+    section {
+      width: 19vh;
+      height: 22vh;
+      background-image: url(/img/logo.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h1,
+  h2 {
+    color: $defaultDarkgreen;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  form {
+    width: 95%;
+  }
+
+  fieldset {
+    width: 100%;
+    @include fColumn;
+    row-gap: 3vh;
+    border: 1px solid $defaultGray;
+    padding: 2%;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+
+  footer {
+    height: 10vh;
+    background-color: $defaultGreen;
+    justify-content: center;
+
+    section {
+      @include fRow;
+      align-items: center;
+      column-gap: 2vh;
+    }
+
+    i,
+    h3,
+    p {
+      color: $defaultWhite;
+    }
+
+    h3 {
+      font-size: 15px;
+    }
+
+    p {
+      font-size: 13px
+    }
+
+    aside {
+      @include fContent (row, center, center, 1vh, 0);
+
+      >a {
+        width: 4vh;
+        height: 4vh;
+        border: 1px solid $defaultWhite;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 13px;
+      }
+    }
+  }
+
+  // scss
+  .ticket,
+  .tuser {
+    width: 95%;
+  }
+
+  // ticket
+  .ticket {
+    padding-top: 5vh;
+    row-gap: 3vh;
+
+    article {
+      row-gap: 2vh;
+    }
+
+    p {
+      text-align: center;
+      font-size: 15px;
+      font-weight: 300;
+      color: $defaultGreen;
+      line-height: 1.5;
+    }
+  }
+
+  // section policy
+  .policy {
+    p {
+      text-align: center;
+      font-size: 12px;
+      font-weight: 500;
+      color: $defaultGray2;
+    }
+
+    article {
+      display: flex;
+      justify-content: center;
+    }
+
+    ul {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1vh;
+      margin-bottom: 0;
+      padding-left: 0;
+    }
+
+    li {
+      list-style-type: none;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    aside {
+      width: 100%;
+      @include fRow;
+      justify-content: center;
+      column-gap: 1vh;
+      text-transform: capitalize;
+    }
+  }
+
+  // info
+  .info {
+    width: 100%;
+    row-gap: 3vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background-color: $defaultDarkgreen;
+
+    h2 {
+      color: $defaultYellow;
+    }
+
+    form {
+      width: 100%;
+      row-gap: 3vh;
+    }
+
+    aside {
+      width: 90%;
+    }
+
+    label {
+      width: 100%;
+      color: $defaultYellow;
+      text-transform: capitalize;
+      font-size: 13px;
+    }
+
+    input {
+      width: 100%;
+      border: 1px solid $defaultGray;
+      background-color: gainsboro;
+    }
+
+    ::placeholder {
+      text-transform: capitalize;
+      font-size: 10px;
+    }
+
+    aside:nth-child(1) {
+      display: flex;
+      width: 93%;
+
+
+      section {
+        width: 100%;
+        flex-direction: row;
+        column-gap: 1vh;
+      }
+    }
+
+    article {
+      width: 95%;
+      @include fRow;
+      justify-content: space-between;
+
+      aside:first-child {
+        width: 50%;
+        flex-direction: row;
+        column-gap: 1vh;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      label {
+        width: 20%;
+      }
+
+      input {
+        width: 60%;
+      }
+    }
+
+    h4 {
+      color: $defaultYellow;
+      text-decoration: underline;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    section {
+      width: 50%;
+      // position: relative;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    details {
+      width: 100%;
+      position: relative;
+      align-items: center;
+      z-index: 6;
+
+      >ul {
+        position: absolute;
+        width: 100%;
+        margin-bottom: 0;
+        padding-left: 0;
+        @include fColumn;
+        display: flex;
+
+        li {
+          width: 100%;
+          height: 100%;
+          background-color: $defaultWhite;
+          text-transform: capitalize;
+          font-weight: 500;
+          padding: 2%;
+          font-size: 13px;
+          line-height: 1.5;
+          @include fColumn;
+          align-items: flex-start;
+
+          ul {
+            width: 100%;
+            padding-top: 0;
+
+            li {
+              display: flex;
+              flex-direction: row;
+              align-items: flex-start;
+              width: 100%;
+              padding: 0;
+              list-style-type: none;
+            }
+          }
+        }
+      }
+    }
+
+    summary {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      text-align: center;
+    }
+
+    aside:last-child {
+      @include fRow;
+      justify-content: center;
+      column-gap: 2vh;
+
+      input {
+        height: 4vh;
+        width: 13vh;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+        background-color: White;
+        color: $defaultDarkgreen;
+      }
+    }
+  }
+
+  // faq
+  .faq {
+    width: 95%;
+    row-gap: 3vh;
+
+    h2 {
+      color: $defaultDarkgreen;
+    }
+
+    h4 {
+      width: 100%;
+      text-decoration: none;
+    }
+
+    #accordionFlushExample {
+      width: 100%
+    }
+
+    .accordion-button {
+      width: 100%;
+      color: $defaultYellow;
+      background-color: $defaultMaincolor;
+    }
+  }
+
+  // event
+  .event {
+    height: 13vh;
+    width: 100%;
+
+    h2 {
+      color: $defaultYellow;
+    }
+
+    figure {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+
+    figcaption {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(20, 20, 20, .5);
+      @include fContent;
+    }
+
+    p {
+      font-size: 12px;
+      color: $defaultWhite;
+    }
+
+
+    h5 {
+      color: $defaultWhite;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+  }
+}

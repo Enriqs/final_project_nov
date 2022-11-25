@@ -1,0 +1,55 @@
+@media (min-width:1000px) {
+  nav {
+    >Section {
+      ul {
+        justify-content: center;
+      }
+
+      li {
+        width: 20vh;
+      }
+
+      a {
+        transition: .4s;
+      }
+
+      a:hover {
+        color: $defaultMaincolor;
+        background-color: $defaultWhite;
+      }
+    }
+  }
+
+  // info
+  .info {
+    details {
+      >ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        li {
+          width: 50%;
+        }
+      }
+    }
+
+    [type="submit"],
+    [type="reset"] {
+      transition: .4s;
+
+      &:hover {
+        background-color: $defaultDarkgreen;
+        color: $defaultWhite
+      }
+    }
+  }
+
+  // event
+  .event {
+    height: 20vh;
+
+    p {
+      font-size: 30px;
+    }
+  }
+}

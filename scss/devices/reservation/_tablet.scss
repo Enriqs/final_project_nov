@@ -1,0 +1,141 @@
+@media (min-width:700px) {
+
+  // nav
+  nav {
+    width: 100%;
+    height: 5vh;
+    background-color: $defaultMaincolor;
+    position: fixed;
+
+    >section {
+      height: 100%;
+
+      ul {
+        width: 80%;
+        height: 100%;
+        display: flex;
+      }
+
+      li {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      a {
+        width: 100%;
+        height: 100%;
+        color: $defaultWhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+      }
+    }
+
+    details {
+      display: none;
+    }
+  }
+
+  footer {
+
+    article {
+      width: 80%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    section {
+      display: flex;
+    }
+  }
+
+    h1 {
+    font-size: 50px
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  form {
+    aside:nth-child(3) {
+      column-gap: 1vh;
+
+      input {
+        width: 70%;
+      }
+    }
+  }
+
+  // ticket
+  .ticket {
+    width: 95%;
+
+    p {
+      font-size: 23px
+    }
+  }
+
+  // policy
+  .policy {
+    width: 100%;
+
+    p,
+    li {
+      font-size: 20px
+    }
+
+    label {
+      font-size: 20px;
+    }
+  }
+
+  // info
+  .info {
+
+
+    aside {
+      flex-direction: row;
+      column-gap: 7vh;
+
+      &:nth-child(3) label {
+        width: 20vh;
+      }
+    }
+
+    label {
+      width: 0;
+      font-size: 20px;
+      display: flex;
+      justify-content: left;
+
+    }
+
+    input {
+      height: 3vh;
+    }
+
+    aside:last-child {
+      input {
+        font-size: 20px;
+      }
+    }
+  }
+
+  // faq
+  .faq {
+    section {
+      width: 100%;
+    }
+  }
+
+  // event
+  .event{
+    figcaption{
+      row-gap: 2vh;
+    }
+  }
+}
