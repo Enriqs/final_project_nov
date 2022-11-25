@@ -23,13 +23,24 @@
   // info
   .info {
     details {
-      >ul{
+      >ul {
         flex-direction: row;
         flex-wrap: wrap;
-        
-        li{
+
+        li {
           width: 50%;
-      }}
+        }
+      }
+    }
+
+    [type="submit"],
+    [type="reset"] {
+      transition: .4s;
+
+      &:hover {
+        background-color: $defaultDarkgreen;
+        color: $defaultWhite
+      }
     }
   }
 
