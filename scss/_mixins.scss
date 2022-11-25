@@ -1,0 +1,39 @@
+@mixin fColumn {
+  display: flex;
+  flex-direction: column;
+}
+@mixin fRow {
+  display: flex;
+  flex-direction: row;
+}
+@mixin fElement($direction, $column, $row) {
+  display: flex;
+  flex-direction: $direction;
+  column-gap: $column;
+  row-gap: $row;
+}
+
+@mixin fRContent($direction: row, $justify: center, $align: center, $column: 0, $row: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  column-gap: $column;
+  row-gap: $row;
+}
+
+@mixin fContent($direction: column, $justify: center, $align: center, $column: 0, $row: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  column-gap: $column;
+  row-gap: $row;
+}
+
+@mixin bgImg($url) {
+  background-image: url($url);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
