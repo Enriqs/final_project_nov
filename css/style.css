@@ -696,6 +696,15 @@ footer p {
   .info details > ul li {
     width: 50%;
   }
+  .info [type=submit],
+.info [type=reset] {
+    transition: 0.4s;
+  }
+  .info [type=submit]:hover,
+.info [type=reset]:hover {
+    background-color: #283E56;
+    color: #FEF4E8;
+  }
   .event {
     height: 20vh;
   }
