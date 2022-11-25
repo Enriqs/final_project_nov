@@ -7,9 +7,3 @@
 html {
    scroll-behavior: smooth;
 }
-
-main,
-main > section,
-main > section > article{
-   @include flexColumnCenter;
-}

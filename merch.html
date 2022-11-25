@@ -10,28 +10,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" defer></script>
-    <style>
-        img {
-          height: 30vh;
-        }
-        article{
-            width: 30%;
-        }
-        </style>
 </head>
-<body>
-    
+<body class="merch">
     <nav>
-
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Merchandise</a></li>
+        <li><a href="#">Reservations</a></li>
+      </ul>
+      <details class="bars">
+        <summary class="fa-solid fa-bars"></summary>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Merchandise</a></li>
+          <li><a href="#">Reservations</a></li>
+        </ul>
+      </details>
     </nav>
     <header>
         <section>
+            <i class="fa-solid fa-ferry"></i>
             <h1>Company Merchandise</h1>
             <article>
                 <form>
                     <input type="text" placeholder="Username">
                     <input type="password" placeholder="Password">
-                    <input type="submit" value="Sign in">
+                    <input type="submit" value="Login">
                     <input type="submit" value="Register">
                 </form>
                 <a href="#" class="fa-solid fa-cart-shopping"></a>
@@ -39,8 +45,23 @@
         </section>        
     </header>
     <main>
+        <section class="loginFather">
+          <details class="login">
+            <summary class="fa-solid fa-user"></summary>
+            <article class="formFather">
+              <form>
+                  <input type="text" placeholder="Username">
+                  <input type="password" placeholder="Password">
+                  <input type="submit" value="Login">
+                  <input type="submit" value="Register">
+              </form>
+              <!-- <a href="#" class="fa-solid fa-cart-shopping"></a> -->
+            </article>
+          </details>
+          <h2><span>Today:</span> UP TO 40% OFF!</h2>
+        </section>
         <section class="carousels">
-            <article>
+            <article class="one">
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -48,25 +69,25 @@
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="img/pic(1).jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>First slide label</h5>
-                          <p>Some representative placeholder content for the first slide.</p>
+                      <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="img/sale.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-sm-block">
+                          <h5>Best Sales!!</h5>
+                          <p>This black friday find sales up to 50% off!</p>
                         </div>
                       </div>
-                      <div class="carousel-item" data-bs-interval="10000" >
-                        <img src="img/pic(2).jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Second slide label</h5>
-                          <p>Some representative placeholder content for the second slide.</p>
+                      <div class="carousel-item" data-bs-interval="5000" >
+                        <img src="img/creditcard.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-sm-block">
+                          <h5>Get additional discounts</h5>
+                          <p>When paying with your credit card get an extra 5% discount!</p>
                         </div>
                       </div>
-                      <div class="carousel-item" data-bs-interval="10000">
-                        <img src="img/pic(3).jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Third slide label</h5>
-                          <p>Some representative placeholder content for the third slide.</p>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="img/gift.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-sm-block">
+                          <h5></h5>
+                          <p>Send gifts to the ones you love the most</p>
                         </div>
                       </div>
                     </div>
@@ -82,266 +103,125 @@
             </article>
         </section>
         <section class="sale">
-          <article>
+          <article class="sep">
             <span></span>
-            <h3>Hot Sales</h3>
+            <h3>Explore by Categories</h3>
             <span></span>
           </article>
-          <article>
-            <section id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <aside class="carousel-inner">
-                <article class="carousel-item active">
-                  <!-- *********************************** -->
-                  <aside>
-                    <figure>
-                      <img src="..." class="d-block w-100" alt="...">
-                      <figcaption>
-  
-                      </figcaption>
-                    </figure>
-                    <aside>
-                      <a href="#">Product 1</a>
-                      <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Produc added"><i class="fa-solid fa-plus"></i></button>
-                      <p>Add to cart!</p>
-                    </aside>
-                  </aside>
-                  <!-- ************************************* -->
-                  <aside>
-                    <figure>
-                      <img src="..." class="d-block w-100" alt="...">
-                      <figcaption>
-  
-                      </figcaption>
-                    </figure>
-                    <aside>
-                      <a href="#">Product 1</a>
-                      <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Produc added"><i class="fa-solid fa-plus"></i></button>
-                      <p>Add to cart!</p>
-                    </aside>
-                  </aside>
-                  <!-- ************************************* -->
-                  <aside>
-                    <figure>
-                      <img src="..." class="d-block w-100" alt="...">
-                      <figcaption>
-  
-                      </figcaption>
-                    </figure>
-                    <aside>
-                      <a href="#">Product 1</a>
-                      <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Produc added"><i class="fa-solid fa-plus"></i></button>
-                      <p>Add to cart!</p>
-                    </aside>
-                  </aside>
-                  <!-- ************************************* -->
-                  <aside>
-                    <figure>
-                      <img src="..." class="d-block w-100" alt="...">
-                      <figcaption>
-  
-                      </figcaption>
-                    </figure>
-                    <aside>
-                      <a href="#">Product 1</a>
-                      <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Produc added"><i class="fa-solid fa-plus"></i></button>
-                      <p>Add to cart!</p>
-                    </aside>
-                  </aside>
-                  <!-- ************************************* -->
-                </article>
-                <article class="carousel-item">
-                   <!-- *********************************** -->
-                   <aside>
-                    <figure>
-                      <img src="..." class="d-block w-100" alt="...">
-                      <figcaption>
-  
-                      </figcaption>
-                    </figure>
-                    <aside>
-                      <a href="#">Product 1</a>
-                      <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Produc added"><i class="fa-solid fa-plus"></i></button>
-                      <p>Add to cart!</p>
-                    </aside>
-                  </aside>
-                  <!-- ************************************* -->
-                  <aside>
-                    <figure>
-                      <img src="..." class="d-block w-100" alt="...">
-                      <figcaption>
-  
-                      </figcaption>
-                    </figure>
-                    <aside>
-                      <a href="#">Product 1</a>
-                      <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Produc added"><i class="fa-solid fa-plus"></i></button>
-                      <p>Add to cart!</p>
-                    </aside>
-                  </aside>
-                  <!-- ************************************* -->
-                  <aside>
-                    <figure>
-                      <img src="..." class="d-block w-100" alt="...">
-                      <figcaption>
-  
-                      </figcaption>
-                    </figure>
-                    <aside>
-                      <a href="#">Product 1</a>
-                      <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Produc added"><i class="fa-solid fa-plus"></i></button>
-                      <p>Add to cart!</p>
-                    </aside>
-                  </aside>
-                  <!-- ************************************* -->
-                  <aside>
-                    <figure>
-                      <img src="..." class="d-block w-100" alt="...">
-                      <figcaption>
-  
-                      </figcaption>
-                    </figure>
-                    <aside>
-                      <a href="#">Product 1</a>
-                      <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Produc added"><i class="fa-solid fa-plus"></i></button>
-                      <p>Add to cart!</p>
-                    </aside>
-                  </aside>
-                  <!-- ************************************* -->
-                </article>
-                <article class="carousel-item">
-                   <!-- *********************************** -->
-                   <aside>
-                    <figure>
-                      <img src="..." class="d-block w-100" alt="...">
-                      <figcaption>
-  
-                      </figcaption>
-                    </figure>
-                    <aside>
-                      <a href="#">Product 1</a>
-                      <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Produc added"><i class="fa-solid fa-plus"></i></button>
-                      <p>Add to cart!</p>
-                    </aside>
-                  </aside>
-                  <!-- ************************************* -->
-                  <aside>
-                    <figure>
-                      <img src="..." class="d-block w-100" alt="...">
-                      <figcaption>
-  
-                      </figcaption>
-                    </figure>
-                    <aside>
-                      <a href="#">Product 1</a>
-                      <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Produc added"><i class="fa-solid fa-plus"></i></button>
-                      <p>Add to cart!</p>
-                    </aside>
-                  </aside>
-                  <!-- ************************************* -->
-                  <aside>
-                    <figure>
-                      <img src="..." class="d-block w-100" alt="...">
-                      <figcaption>
-  
-                      </figcaption>
-                    </figure>
-                    <aside>
-                      <a href="#">Product 1</a>
-                      <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Produc added"><i class="fa-solid fa-plus"></i></button>
-                      <p>Add to cart!</p>
-                    </aside>
-                  </aside>
-                  <!-- ************************************* -->
-                  <aside>
-                    <figure>
-                      <img src="..." class="d-block w-100" alt="...">
-                      <figcaption>
-  
-                      </figcaption>
-                    </figure>
-                    <aside>
-                      <a href="#">Product 1</a>
-                      <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Produc added"><i class="fa-solid fa-plus"></i></button>
-                      <p>Add to cart!</p>
-                    </aside>
-                  </aside>
-                  <!-- ************************************* -->
-                </article>
-              </aside>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </section>
+          <article class="fix">
+            <aside>
+              <figure>
+                  <figcaption>
+                    <p>Basketball</p>
+                  </figcaption>
+              </figure>
+              <a href="#">See more</a>
+            </aside>
+            <aside>
+              <figure>
+                  <figcaption>
+                    <p>Football</p>
+                  </figcaption>
+              </figure>
+              <a href="#">See more</a>
+            </aside>
+            <aside>
+              <figure>
+                  <figcaption>
+                    <p>Soccer</p>
+                  </figcaption>
+              </figure>
+              <a href="#">See more</a>
+            </aside>
+            <aside>
+              <figure>
+                  <figcaption>
+                    <p>Golf</p>
+                  </figcaption>
+              </figure>
+              <a href="#">See more</a>
+            </aside>
+            <aside>
+              <figure>
+                  <figcaption>
+                    <p>Cycling</p>
+                  </figcaption>
+              </figure>
+              <a href="#">See more</a>
+            </aside>
+            <aside>
+              <figure>
+                  <figcaption>
+                    <p>Boxing</p>
+                  </figcaption>
+              </figure>
+              <a href="#">See more</a>
+            </aside>
           </article>
         </section>
         <section class="normal">
-          <article>
+          <article class="sep">
             <span></span>
-            <h3>Latest Products</h3>
+            <h3>Hot Sales Right Now</h3>
             <span></span>
           </article>
-          <article>
+          <article class="salesFigs one">
             <!-- *********************************** -->
-            <aside>
+            <aside class="normalFig">
               <figure>
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="img/tennis.jpg" class="d-block w-100" alt="...">
                 <figcaption>
 
                 </figcaption>
               </figure>
               <aside>
-                <a href="#">Product 1</a>
-                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Produc added"><i class="fa-solid fa-plus"></i></button>
+                <a href="#">Up to 50% off!</a>
+                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Product added"><i class="fa-solid fa-plus"></i></button>
+                <p>Explore more of this!</p>
+              </aside>
+            </aside>
+            <!-- ************************************* -->
+            <!-- *********************************** -->
+            <aside class="normalFig">
+              <figure>
+                <img src="img/swimming.jpg" class="d-block w-100" alt="...">
+                <figcaption>
+
+                </figcaption>
+              </figure>
+              <aside>
+                <a href="#">Up to 30% off!</a>
+                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Product added"><i class="fa-solid fa-plus"></i></button>
                 <p>Add to cart!</p>
               </aside>
             </aside>
             <!-- ************************************* -->
             <!-- *********************************** -->
-            <aside>
+            <aside class="normalFig">
               <figure>
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="img/surfing.jpg" class="d-block w-100" alt="...">
                 <figcaption>
 
                 </figcaption>
               </figure>
               <aside>
-                <a href="#">Product 1</a>
-                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Produc added"><i class="fa-solid fa-plus"></i></button>
+                <a href="#">Up to 15% off!</a>
+                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Product added"><i class="fa-solid fa-plus"></i></button>
                 <p>Add to cart!</p>
               </aside>
             </aside>
             <!-- ************************************* -->
             <!-- *********************************** -->
-            <aside>
+            <aside class="normalFig">
               <figure>
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="img/ski.jpg" class="d-block w-100" alt="...">
                 <figcaption>
 
                 </figcaption>
               </figure>
               <aside>
-                <a href="#">Product 1</a>
-                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Produc added"><i class="fa-solid fa-plus"></i></button>
-                <p>Add to cart!</p>
-              </aside>
-            </aside>
-            <!-- ************************************* -->
-            <!-- *********************************** -->
-            <aside>
-              <figure>
-                <img src="..." class="d-block w-100" alt="...">
-                <figcaption>
-
-                </figcaption>
-              </figure>
-              <aside>
-                <a href="#">Product 1</a>
-                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Produc added"><i class="fa-solid fa-plus"></i></button>
+                <a href="#">Up to 10% off</a>
+                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Product added"><i class="fa-solid fa-plus"></i></button>
                 <p>Add to cart!</p>
               </aside>
             </aside>
@@ -361,26 +241,56 @@
         </section>
         <section class="ad">
           <article>
-            <video src=""></video>
-            <h3>BUY THIS!</h3>
+            <video src="video/ad-merch.mp4" autoplay muted loop></video>
           </article>
         </section>
         <section class="brands">
-          <article>
+          <article class="sep">
             <span></span>
-            <h3>Brands</h3>
+            <h3>By Brands</h3>
             <span></span>
           </article>
           <article>
-            <figure></figure>
-            <figure></figure>
-            <figure></figure>
-            <figure></figure>
+            <a href="#">
+              <figure>
+                <img src="img/logo1.png" alt="add1">
+              </figure>
+            </a>
+            <a href="#">
+              <figure>
+                <img src="img/logo2.png" alt="add2">
+              </figure>
+            </a>
+            <a href="#">
+              <figure>
+                <img src="img/logo3.png" alt="add3">
+              </figure>
+            </a>
+            <a href="#">
+              <figure>
+                <img src="img/logo4.png" alt="add4">
+              </figure>
+            </a>
           </article>
         </section>
     </main>
     <footer>
         <!-- SOCIALS -->
+        <section>
+          <h3>Our Socials!</h3>
+          <aside>
+             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+             <a href="#"><i class="fa-brands fa-twitter"></i></a>
+             <a href="#"><i class="fa-brands fa-github"></i></a>
+             <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+             <a href="#"><i class="fa-regular fa-envelope"></i></a>
+          </aside>
+       </section>
+       <section>
+          <p>
+             &copy; Copyright Company All Rights Reserved
+          </p>
+       </section>
     </footer>
 </body>
 </html>
