@@ -1,3 +1,22 @@
-@media (min-width:100px) {
-  
+@media (min-width:1000px) {
+  nav {
+    >Section {
+      ul {
+        justify-content: center;
+      }
+
+      li {
+        width: 20vh;
+      }
+
+      a {
+        transition: .4s;
+      }
+
+      a:hover {
+        color: $defaultMaincolor;
+        background-color: $defaultWhite;
+      }
+    }
+  }
 }
