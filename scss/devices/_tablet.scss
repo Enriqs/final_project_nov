@@ -3,4 +3,36 @@
     @import 'about/tablet';
     @import 'merch/tablet';
     @import 'reservation/tablet';
+
+    // gallery
+    .gallery {
+        >article {
+            @include flexWrap;
+            align-items: flex-end;
+
+            section {
+                width: 38vh;
+            }
+
+            >aside {
+                width: 20vh;
+            }
+
+            >article {
+                width: 100%;
+                @include flexWrap;
+                row-gap: 3vh;
+            }
+        }
+
+        figure {
+            width: 45%;
+            height: 50%;
+
+            section {
+                width: 100%;
+                height: 30vh;
+            }
+        }
+    }
 }

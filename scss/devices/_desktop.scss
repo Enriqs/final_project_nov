@@ -3,4 +3,57 @@
     @import 'about/desktop';
     @import 'merch/desktop';
     @import 'reservation/desktop';
+
+    // gallery{
+    .gallery {
+
+        height: 75vh;
+        padding-top: 5%;
+        row-gap: 7vh;
+
+        >article {
+            width: 80%;
+
+            figure {
+                height: 20vh;
+                position: relative;
+            }
+
+            a {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                display: flex;
+                text-decoration: none;
+                transition: .4s;
+
+                aside {
+                    width: 100%;
+                    display: none;
+                    padding: 2%;
+                    justify-content: end;
+                    row-gap: .5vh;
+                }
+            }
+
+            figure:hover {
+                a {
+                    background-color: $defaultColor;
+                    opacity: .7;
+                }
+
+                aside {
+                    color: white;
+                    display: flex;
+                }
+            }
+        }
+
+        a {
+            width: 10vh;
+            height: 5vh;
+            text-decoration: none;
+            border: 1px solid red;
+        }
+    }
 }
