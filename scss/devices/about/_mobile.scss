@@ -15,7 +15,6 @@
         color: $textcolor;
         background-color: $background;
         width: 100%;
-        /* position: fixed; */
 
         img{
             width: 20vh;
@@ -194,7 +193,7 @@
     }
 
     /****/
-    footer{
+    .footer-pablo{
         padding-top: 5%;
         padding-bottom: 5%;
         display: flex;
@@ -775,5 +774,10 @@
 
     .logopablo {
         height: fit-content;
+    }
+
+    .h2pablo{
+        color: rgb(141, 30, 64);
+        font-size: 24px;
     }
 }
