@@ -1,25 +1,27 @@
 @media (min-width:200px) {
-  nav,
-nav>section,
-header,
-header>section,
-main,
-main section,
-main article,
-main aside,
-article,
-form,
-fieldset,
-footer {
-  @include fColumn;
-  align-items: center;
-}
 
+  .reservation-body{
+    nav,
+    nav>section,
+    header,
+    header>section,
+    main,
+    main section,
+    main article,
+    main aside,
+    article,
+    form,
+    fieldset,
+    footer {
+      @include fColumn;
+      align-items: center;
+    }
+  }
 main {
   row-gap: 5vh;
 }
 
-  nav {
+  nav.jae-nav {
 
     >section {
       width: 100%;

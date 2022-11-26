@@ -75,6 +75,107 @@ figure {
     background-color: #283E56;
     color: #FEF4E8;
   }
+  .about-pablo {
+    border-top: 1px solid rgb(32, 31, 31);
+    border-bottom: 1px solid rgb(32, 31, 31);
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    align-items: center;
+    row-gap: 2vh;
+    width: 95%;
+    align-items: center;
+  }
+  .about-pablo a {
+    text-decoration: none;
+  }
+  .about-pablo > h2 {
+    font-size: 40px;
+  }
+  .about-pablo .news-preview {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    align-items: center;
+  }
+  .about-pablo .news-preview article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+  .about-pablo .news-preview aside {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-pablo .news-preview img {
+    width: 100%;
+  }
+  .about-pablo .timeline-preview {
+    display: flex;
+    justify-content: center;
+  }
+  .about-pablo .timeline-preview figure {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgb(32, 31, 31);
+    border-bottom: 1px solid rgb(32, 31, 31);
+  }
+  .about-pablo .stadiums-preview figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1vh;
+    border: 2px solid rgb(32, 31, 31);
+    background-color: rgb(32, 31, 31);
+  }
+  .about-pablo .stadiums-preview img {
+    width: 100%;
+  }
+  .about-pablo .stadiums-preview figcaption {
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+  .about-pablo .stadiums-preview p {
+    width: 95%;
+    color: white;
+  }
+  .about-pablo .stadiums-preview .stadium-figtop {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 2%;
+  }
+  .about-pablo .stadiums-preview .stadium-figbot {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+    justify-content: center;
+  }
+  .about-pablo .stadiums-preview .stadium-figbot span {
+    font-size: 20px;
+    color: white;
+  }
+  .about-pablo .stadiums-preview .stadium-figbot .capacity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about-pablo .stadiums-preview h4 {
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+  }
+  .about-pablo h2 {
+    color: rgb(141, 30, 64);
+    font-size: 26px;
+  }
 }
 @media (min-width: 200px) and (min-width: 200px) {
   .header-pablo {
@@ -95,7 +196,6 @@ figure {
     color: rgb(138, 135, 135);
     background-color: rgb(32, 31, 31);
     width: 100%;
-    /* position: fixed; */
   }
   .navpablo img {
     width: 20vh;
@@ -275,7 +375,7 @@ figure {
     border-bottom: 1px solid rgb(32, 31, 31);
   }
   /****/
-  footer {
+  .footer-pablo {
     padding-top: 5%;
     padding-bottom: 5%;
     display: flex;
@@ -283,17 +383,17 @@ figure {
     justify-content: center;
     background-color: rgb(32, 31, 31);
   }
-  footer .sponsor {
+  .footer-pablo .sponsor {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 95%;
   }
-  footer img {
+  .footer-pablo img {
     height: 6vh;
     width: 6h;
   }
-  footer section {
+  .footer-pablo section {
     color: white;
     font-size: 12px;
     width: 95%;
@@ -1000,6 +1100,10 @@ figure {
     height: -moz-fit-content;
     height: fit-content;
   }
+  .h2pablo {
+    color: rgb(141, 30, 64);
+    font-size: 24px;
+  }
 }
 @media (min-width: 200px) and (min-width: 200px) {
   .merch article {
@@ -1386,18 +1490,18 @@ section.normal > article:last-child p {
   }
 }
 @media (min-width: 200px) and (min-width: 200px) {
-  nav,
-nav > section,
-header,
-header > section,
-main,
-main section,
-main article,
-main aside,
-article,
-form,
-fieldset,
-footer {
+  .reservation-body nav,
+.reservation-body nav > section,
+.reservation-body header,
+.reservation-body header > section,
+.reservation-body main,
+.reservation-body main section,
+.reservation-body main article,
+.reservation-body main aside,
+.reservation-body article,
+.reservation-body form,
+.reservation-body fieldset,
+.reservation-body footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1405,13 +1509,13 @@ footer {
   main {
     row-gap: 5vh;
   }
-  nav > section {
+  nav.jae-nav > section {
     width: 100%;
   }
-  nav > section ul {
+  nav.jae-nav > section ul {
     display: none;
   }
-  nav details {
+  nav.jae-nav details {
     width: 95%;
     padding: 2%;
     position: relative;
@@ -1420,7 +1524,7 @@ footer {
     justify-content: center;
     z-index: 6;
   }
-  nav details ul {
+  nav.jae-nav details ul {
     width: 100%;
     height: 25vh;
     background-color: #FEF4E8;
@@ -1429,7 +1533,7 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
-  nav details li {
+  nav.jae-nav details li {
     width: 100%;
     height: 100%;
     display: flex;
@@ -1440,25 +1544,25 @@ footer {
          column-gap: 0;
     row-gap: 0;
   }
-  nav details a {
+  nav.jae-nav details a {
     width: 100%;
     height: 100%;
     text-decoration: none;
     text-align: start;
     font-weight: 500;
   }
-  nav summary {
+  nav.jae-nav summary {
     font-size: 25px;
     display: flex;
     text-align: right;
     justify-content: flex-end;
   }
-  nav ul {
+  nav.jae-nav ul {
     margin-bottom: 0;
     padding-left: 0;
   }
-  nav i,
-nav a {
+  nav.jae-nav i,
+nav.jae-nav a {
     color: #970747;
   }
   header {
@@ -1866,6 +1970,22 @@ footer p {
     text-transform: capitalize;
     font-size: 15px;
   }
+  .about-pablo .news-preview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .about-pablo .news-preview article {
+    width: 45%;
+  }
+  .about-pablo a {
+    text-decoration: none;
+  }
+  .about-pablo h2 {
+    color: rgb(141, 30, 64);
+    font-size: 26px;
+  }
 }
 @media (min-width: 600px) and (min-width: 600px) {
   .navpablo .imagemain {
@@ -2085,27 +2205,27 @@ footer p {
   }
 }
 @media (min-width: 600px) and (min-width: 700px) {
-  nav {
+  nav.jae-nav {
     width: 100%;
     height: 5vh;
     background-color: #970747;
     position: fixed;
   }
-  nav > section {
+  nav.jae-nav > section {
     height: 100%;
   }
-  nav > section ul {
+  nav.jae-nav > section ul {
     width: 80%;
     height: 100%;
     display: flex;
   }
-  nav > section li {
+  nav.jae-nav > section li {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
   }
-  nav > section a {
+  nav.jae-nav > section a {
     width: 100%;
     height: 100%;
     color: #FEF4E8;
@@ -2114,7 +2234,7 @@ footer p {
     align-items: center;
     text-decoration: none;
   }
-  nav details {
+  nav.jae-nav details {
     display: none;
   }
   footer article {
@@ -2230,6 +2350,9 @@ footer p {
   .header-pablo {
     height: 60vh;
   }
+  .navpablo {
+    position: absolute;
+  }
   .navpablo ul {
     display: flex;
     width: 60%;
@@ -2294,16 +2417,16 @@ footer p {
   }
 }
 @media (min-width: 1000px) and (min-width: 1000px) {
-  nav > Section ul {
+  nav.jae-nav > Section ul {
     justify-content: center;
   }
-  nav > Section li {
+  nav.jae-nav > Section li {
     width: 20vh;
   }
-  nav > Section a {
+  nav.jae-nav > Section a {
     transition: 0.4s;
   }
-  nav > Section a:hover {
+  nav.jae-nav > Section a:hover {
     color: #970747;
     background-color: #FEF4E8;
   }
@@ -2367,6 +2490,107 @@ footer p {
     background-color: #283E56;
     color: #FEF4E8;
   }
+  .about-pablo {
+    border-top: 1px solid rgb(32, 31, 31);
+    border-bottom: 1px solid rgb(32, 31, 31);
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    align-items: center;
+    row-gap: 2vh;
+    width: 95%;
+    align-items: center;
+  }
+  .about-pablo a {
+    text-decoration: none;
+  }
+  .about-pablo > h2 {
+    font-size: 40px;
+  }
+  .about-pablo .news-preview {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    align-items: center;
+  }
+  .about-pablo .news-preview article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+  }
+  .about-pablo .news-preview aside {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-pablo .news-preview img {
+    width: 100%;
+  }
+  .about-pablo .timeline-preview {
+    display: flex;
+    justify-content: center;
+  }
+  .about-pablo .timeline-preview figure {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgb(32, 31, 31);
+    border-bottom: 1px solid rgb(32, 31, 31);
+  }
+  .about-pablo .stadiums-preview figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1vh;
+    border: 2px solid rgb(32, 31, 31);
+    background-color: rgb(32, 31, 31);
+  }
+  .about-pablo .stadiums-preview img {
+    width: 100%;
+  }
+  .about-pablo .stadiums-preview figcaption {
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+  }
+  .about-pablo .stadiums-preview p {
+    width: 95%;
+    color: white;
+  }
+  .about-pablo .stadiums-preview .stadium-figtop {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 2%;
+  }
+  .about-pablo .stadiums-preview .stadium-figbot {
+    display: flex;
+    -moz-column-gap: 3vh;
+         column-gap: 3vh;
+    justify-content: center;
+  }
+  .about-pablo .stadiums-preview .stadium-figbot span {
+    font-size: 20px;
+    color: white;
+  }
+  .about-pablo .stadiums-preview .stadium-figbot .capacity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about-pablo .stadiums-preview h4 {
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+  }
+  .about-pablo h2 {
+    color: rgb(141, 30, 64);
+    font-size: 26px;
+  }
 }
 @media (min-width: 700px) {
   .reservation .schedule {
@@ -2393,6 +2617,22 @@ footer p {
     list-style-type: none;
     text-transform: capitalize;
     font-size: 15px;
+  }
+  .about-pablo .news-preview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .about-pablo .news-preview article {
+    width: 45%;
+  }
+  .about-pablo a {
+    text-decoration: none;
+  }
+  .about-pablo h2 {
+    color: rgb(141, 30, 64);
+    font-size: 26px;
   }
 }
 @media (min-width: 1000px) {
