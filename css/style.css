@@ -39,6 +39,9 @@ figure {
 }
 
 @media (min-width: 200px) and (min-width: 200px) {
+  main {
+    overflow: hidden;
+  }
   .reservation {
     row-gap: 3vh;
   }
@@ -175,6 +178,149 @@ figure {
   .about-pablo h2 {
     color: rgb(141, 30, 64);
     font-size: 26px;
+  }
+  .merch3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .merch3 > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .merch3 h4 {
+    width: 90%;
+    font-size: 14px;
+  }
+  .merch3 h4 > span {
+    color: orangered;
+  }
+  .merch2 {
+    padding-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    row-gap: 4vh;
+  }
+  .merch2 figure {
+    height: 15vh;
+    width: 50vh;
+  }
+  .merch2 figcaption {
+    display: none;
+  }
+  .merch2 a:nth-child(1) > figure {
+    background-image: url("/img/soccer.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .merch2 a:nth-child(2) > figure {
+    background-image: url("/img/football.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .merch2 a:nth-child(3) > figure {
+    background-image: url("/img/boxing.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .merch2 a:nth-child(4) > figure {
+    background-image: url("/img/golf.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .adsa {
+    height: 62vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .adsa > article {
+    position: relative;
+    width: 100%;
+  }
+  .adsa video {
+    width: 100%;
+    position: absolute;
+    left: 50%; /* % of surrounding element */
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  footer.logojae {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    background-color: #1989AC;
+    justify-content: center;
+    align-items: center;
+  }
+  footer.logojae section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+  }
+  footer.logojae i,
+footer.logojae h3,
+footer.logojae p {
+    color: #FEF4E8;
+  }
+  footer.logojae h3 {
+    font-size: 15px;
+  }
+  footer.logojae p {
+    font-size: 13px;
+  }
+  footer.logojae aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+    row-gap: 0;
+  }
+  footer.logojae aside > a {
+    width: 4vh;
+    height: 4vh;
+    border: 1px solid #FEF4E8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  header.finall {
+    height: 60vh;
+    display: flex;
+    background-color: #FEF4E8;
+    align-items: center;
+    justify-content: center;
+  }
+  header.finall section {
+    width: 19vh;
+    height: 22vh;
+    background-image: url(/img/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media (min-width: 200px) and (min-width: 200px) {
@@ -1106,6 +1252,9 @@ figure {
   }
 }
 @media (min-width: 200px) and (min-width: 200px) {
+  .merch img {
+    height: 30vh;
+  }
   .merch article {
     width: 100%;
   }
@@ -1616,30 +1765,30 @@ h6 {
     padding-top: 3vh;
     padding-bottom: 3vh;
   }
-  footer {
+  footer.logojae {
     height: 10vh;
     background-color: #1989AC;
     justify-content: center;
   }
-  footer section {
+  footer.logojae section {
     display: flex;
     flex-direction: row;
     align-items: center;
     -moz-column-gap: 2vh;
          column-gap: 2vh;
   }
-  footer i,
-footer h3,
-footer p {
+  footer.logojae i,
+footer.logojae h3,
+footer.logojae p {
     color: #FEF4E8;
   }
-  footer h3 {
+  footer.logojae h3 {
     font-size: 15px;
   }
-  footer p {
+  footer.logojae p {
     font-size: 13px;
   }
-  footer aside {
+  footer.logojae aside {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1648,7 +1797,7 @@ footer p {
          column-gap: 1vh;
     row-gap: 0;
   }
-  footer aside > a {
+  footer.logojae aside > a {
     width: 4vh;
     height: 4vh;
     border: 1px solid #FEF4E8;
@@ -1955,6 +2104,58 @@ footer p {
     color: rgb(141, 30, 64);
     font-size: 26px;
   }
+  .merch {
+    width: 100%;
+  }
+  .merch h4 {
+    font-size: 34px;
+  }
+  .merch .merch2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    -moz-column-gap: 4vh;
+         column-gap: 4vh;
+  }
+  .merch .merch2 a {
+    width: 40%;
+    text-decoration: none;
+  }
+  .merch .merch2 a:hover figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.466);
+    width: 100%;
+    height: 100%;
+  }
+  .merch .merch2 figure {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .adsa {
+    height: 62vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .adsa > article {
+    position: relative;
+    width: 60%;
+  }
 }
 @media (min-width: 600px) and (min-width: 600px) {
   .navpablo .imagemain {
@@ -2206,12 +2407,12 @@ footer p {
   nav.jae-nav details {
     display: none;
   }
-  footer article {
+  footer.logojae article {
     width: 80%;
     flex-direction: row;
     justify-content: space-between;
   }
-  footer section {
+  footer.logojae section {
     display: flex;
   }
   h1 {
@@ -2313,6 +2514,10 @@ footer p {
   }
   .reservation details {
     display: none;
+  }
+  .adsa > article {
+    position: relative;
+    width: 45%;
   }
 }
 @media (min-width: 1000px) and (min-width: 1000px) {
@@ -2423,6 +2628,9 @@ footer p {
   }
 }
 @media (min-width: 200px) {
+  main {
+    overflow: hidden;
+  }
   .reservation {
     row-gap: 3vh;
   }
@@ -2560,6 +2768,149 @@ footer p {
     color: rgb(141, 30, 64);
     font-size: 26px;
   }
+  .merch3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .merch3 > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  .merch3 h4 {
+    width: 90%;
+    font-size: 14px;
+  }
+  .merch3 h4 > span {
+    color: orangered;
+  }
+  .merch2 {
+    padding-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    row-gap: 4vh;
+  }
+  .merch2 figure {
+    height: 15vh;
+    width: 50vh;
+  }
+  .merch2 figcaption {
+    display: none;
+  }
+  .merch2 a:nth-child(1) > figure {
+    background-image: url("/img/soccer.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .merch2 a:nth-child(2) > figure {
+    background-image: url("/img/football.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .merch2 a:nth-child(3) > figure {
+    background-image: url("/img/boxing.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .merch2 a:nth-child(4) > figure {
+    background-image: url("/img/golf.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .adsa {
+    height: 62vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .adsa > article {
+    position: relative;
+    width: 100%;
+  }
+  .adsa video {
+    width: 100%;
+    position: absolute;
+    left: 50%; /* % of surrounding element */
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  footer.logojae {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    background-color: #1989AC;
+    justify-content: center;
+    align-items: center;
+  }
+  footer.logojae section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    -moz-column-gap: 2vh;
+         column-gap: 2vh;
+  }
+  footer.logojae i,
+footer.logojae h3,
+footer.logojae p {
+    color: #FEF4E8;
+  }
+  footer.logojae h3 {
+    font-size: 15px;
+  }
+  footer.logojae p {
+    font-size: 13px;
+  }
+  footer.logojae aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 1vh;
+         column-gap: 1vh;
+    row-gap: 0;
+  }
+  footer.logojae aside > a {
+    width: 4vh;
+    height: 4vh;
+    border: 1px solid #FEF4E8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  header.finall {
+    height: 60vh;
+    display: flex;
+    background-color: #FEF4E8;
+    align-items: center;
+    justify-content: center;
+  }
+  header.finall section {
+    width: 19vh;
+    height: 22vh;
+    background-image: url(/img/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 @media (min-width: 700px) {
   .reservation .schedule {
@@ -2602,6 +2953,58 @@ footer p {
   .about-pablo h2 {
     color: rgb(141, 30, 64);
     font-size: 26px;
+  }
+  .merch {
+    width: 100%;
+  }
+  .merch h4 {
+    font-size: 34px;
+  }
+  .merch .merch2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    -moz-column-gap: 4vh;
+         column-gap: 4vh;
+  }
+  .merch .merch2 a {
+    width: 40%;
+    text-decoration: none;
+  }
+  .merch .merch2 a:hover figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.466);
+    width: 100%;
+    height: 100%;
+  }
+  .merch .merch2 figure {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .adsa {
+    height: 62vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .adsa > article {
+    position: relative;
+    width: 60%;
   }
 }
 @media (min-width: 1000px) {
@@ -2647,5 +3050,9 @@ footer p {
   }
   .reservation details {
     display: none;
+  }
+  .adsa > article {
+    position: relative;
+    width: 45%;
   }
 }/*# sourceMappingURL=style.css.map */

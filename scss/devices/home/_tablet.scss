@@ -53,4 +53,50 @@
   }
   }
  
+
+  .merch {
+    width: 100%;
+
+    h4 {
+      font-size: 34px;
+    }
+    
+    .merch2 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 80%;
+      column-gap: 4vh;
+  
+      a {
+        width: 40%;
+        text-decoration: none;
+      }
+
+      a:hover figcaption {
+        @include flexColumnCenter;
+        text-decoration: none;
+        color : white;
+        background-color: rgba(0, 0, 0, 0.466);
+        width: 100%;
+        height: 100%;
+      }
+
+      figure {
+        width: 100%;
+        height: 30vh;
+        @include flexColumnCenter;
+      }
+    }
+  }
+  .adsa {
+    height: 62vh;
+    width: 100%;
+    @include flexColumnCenter;
+
+    > article {
+      position: relative;
+      width: 60%;
+    }
+  }
 }
