@@ -3,6 +3,10 @@
 
 @media (min-width:200px) {
 
+  main {
+    overflow: hidden;
+  }
+
   // reservation
   .reservation {
     row-gap: 3vh;
@@ -45,6 +49,70 @@
       border: 1px solid $defaultWhite;
       background-color: $defaultDarkgreen;
       color: $defaultWhite
+    }
+  }
+
+  .merch {
+    > article {
+      @include flexColumnCenter;
+      text-align: center;
+    }
+
+    h4 {
+      width: 90%;
+      font-size: 14px;
+
+      >span {
+        color: orangered;
+      }
+    }
+  }
+
+  .merch2 {
+    padding-top: 4vh;
+
+    @include flexColumnCenter;
+    row-gap: 4vh;
+
+    figure {
+      height: 15vh;
+      width: 50vh;
+    }
+
+    figcaption {
+      display: none;
+    }
+
+    a:nth-child(1) > figure {
+      @include backImage("/img/soccer.jpg");
+    }
+    a:nth-child(2) > figure {
+      @include backImage("/img/football.jpg");
+    }
+    a:nth-child(3) > figure {
+      @include backImage("/img/boxing.jpg");
+    }
+    a:nth-child(4) > figure {
+      @include backImage("/img/golf.jpg");
+    }
+  }
+
+  .adsa {
+    height: 62vh;
+    width: 100%;
+    @include flexColumnCenter;
+
+    > article {
+      position: relative;
+      width: 100%;
+    }
+
+    video {
+        width: 100%;
+        position: absolute;
+        left: 50%; /* % of surrounding element */
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
   }
 

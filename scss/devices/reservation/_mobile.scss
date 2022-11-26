@@ -19,7 +19,7 @@ main {
   row-gap: 5vh;
 }
 
-  nav {
+  nav.logojae {
 
     >section {
       width: 100%;
@@ -139,7 +139,7 @@ main {
     padding-bottom: 3vh;
   }
 
-  footer {
+  footer.logojae {
     height: 10vh;
     background-color: $defaultGreen;
     justify-content: center;
