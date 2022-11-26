@@ -111,3 +111,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@mixin flexWrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

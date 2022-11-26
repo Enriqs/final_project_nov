@@ -19,6 +19,14 @@
             a {
                 text-decoration: none;
                 color: white;
+                border: 2px solid black;
+                transition: .5s;
+            }
+
+            a:hover {
+                border-bottom: 2px solid white;
+                border-right: 2px solid white;
+                border-left: 2px solid white;
             }
 
             > details {
